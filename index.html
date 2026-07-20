@@ -180,6 +180,31 @@
   .spx-playful-color .t{font-size:19px;font-weight:800;position:relative}
   .spx-playful-color .t em{font-style:normal;color:#7A5CF0}
   .spx-playful-color .b{display:inline-block;background:#7A5CF0;color:#FFF;font-weight:700;font-size:10.5px;padding:7px 14px;border-radius:99px;box-shadow:0 4px 0 #5A3ED0;margin-top:12px;position:relative}
+  .spx-y2k-retro-futurism{background:#04040C;position:relative;overflow:hidden}
+  .spx-y2k-retro-futurism::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,255,255,.05) 3px 4px)}
+  .spx-y2k-retro-futurism .t{font-size:24px;font-weight:900;font-style:italic;letter-spacing:-.01em;background:linear-gradient(180deg,#EAF6FF 0%,#8FB6D9 45%,#F8FBFF 50%,#5E7FA6 55%,#DDEFFF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 6px rgba(0,229,255,.55))}
+  .spx-y2k-retro-futurism .s{color:#39E6FF;font-family:Consolas,monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;margin-top:8px}
+  .spx-y2k-retro-futurism .horizon{position:absolute;left:-10%;right:-10%;bottom:-26px;height:60px;background:linear-gradient(transparent,rgba(57,230,255,.25));clip-path:polygon(0 100%,100% 100%,100% 0,0 0);border-top:1px solid rgba(57,230,255,.5)}
+  .spx-japanese-minimalism{background:#F8F6F1;color:#26241F;position:relative}
+  .spx-japanese-minimalism .t{font-family:Georgia,serif;font-weight:400;font-size:13px;letter-spacing:.14em;position:absolute;bottom:18px;right:18px;text-align:right}
+  .spx-japanese-minimalism .dot{position:absolute;bottom:44px;right:18px;width:9px;height:9px;border-radius:50%;background:#C33}
+  .spx-quiet-luxury{background:#F3EFE7;color:#4A443B;text-align:center}
+  .spx-quiet-luxury .o{font-size:8.5px;letter-spacing:.42em;text-transform:uppercase;color:#9A9284;margin-top:6px}
+  .spx-quiet-luxury .t{font-family:Georgia,serif;font-weight:400;font-size:19px;letter-spacing:.12em;margin-top:10px}
+  .spx-quiet-luxury .rule{width:26px;height:1px;background:#9A9284;margin:12px auto 0}
+  .spx-tactile-skeuomorph{background:#E8E4DA;display:flex;align-items:center;gap:16px}
+  .spx-tactile-skeuomorph .knob{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FDFDFB,#C9C5BB 60%,#ABA69A);box-shadow:inset 0 2px 3px rgba(255,255,255,.9),inset 0 -3px 5px rgba(0,0,0,.22),0 4px 8px rgba(0,0,0,.18);position:relative;flex:none}
+  .spx-tactile-skeuomorph .knob::after{content:"";position:absolute;top:6px;left:50%;width:3px;height:12px;background:#E8500A;border-radius:2px;transform:translateX(-50%)}
+  .spx-tactile-skeuomorph .t{font-family:Consolas,monospace;font-size:12px;color:#4A463E;letter-spacing:.06em}
+  .spx-tactile-skeuomorph .t b{color:#E8500A}
+  .spx-immersive-3d{background:radial-gradient(90% 120% at 50% 0%,#101820 0%,#05070A 70%);position:relative;overflow:hidden;text-align:center}
+  .spx-immersive-3d .orb{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#CFEFFF,#3D8FB8 55%,#0B2634);box-shadow:0 0 26px rgba(99,196,255,.55),0 14px 18px -8px rgba(0,0,0,.7);margin:14px auto 0}
+  .spx-immersive-3d .t{color:#D9E8F2;font-size:10px;letter-spacing:.34em;text-transform:uppercase;margin-top:14px}
+  .spx-immersive-3d .scroll{color:#5E7A8C;font-family:Consolas,monospace;font-size:9px;margin-top:6px}
+  .spx-bento-grid{background:#F2F2EF;display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:7px;padding:12px 14px}
+  .spx-bento-grid .cell{background:#FFF;border:1px solid #E2E2DC;border-radius:10px;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 1px 2px rgba(0,0,0,.05);padding:7px 9px;font-size:9px;color:#55554E}
+  .spx-bento-grid .hero{grid-row:1/3;font-size:11px;font-weight:600;color:#232320}
+  .spx-bento-grid .num{font-family:Consolas,monospace;font-size:14px;color:#232320;display:block;margin-top:2px}
   .spx-magazine-print{background:#FCFBF8;color:#141412;font-family:Georgia,'Times New Roman',serif}
   .spx-magazine-print .mh{text-align:center;border-bottom:2px double #141412;padding-bottom:5px;font-size:15px;letter-spacing:.06em;font-weight:700;text-transform:uppercase}
   .spx-magazine-print .cols{column-count:2;column-gap:14px;column-rule:1px solid #DDDCD2;font-size:9.5px;line-height:1.45;text-align:justify;margin-top:8px}
@@ -250,7 +275,13 @@ const SPECIMENS = {
   "cinematic-dark": `<div class="o">A new kind of engine</div><div class="t">Render reality.</div>`,
   "glass-soft-futurism": `<div class="g"><div class="t">Ambient by design.</div><div class="s">Interface as frosted architecture.</div></div>`,
   "playful-color": `<span class="bl b1"></span><span class="bl b2"></span><div class="t">Learning that feels like <em>playing.</em></div><span class="b">Start your streak</span>`,
-  "magazine-print": `<div class="mh">The Ledger</div><div class="cols"><p>When the interface borrows the newspaper's clothes, it borrows its credibility. Columns imply editing; a masthead implies an institution worth trusting.</p></div>`
+  "magazine-print": `<div class="mh">The Ledger</div><div class="cols"><p>When the interface borrows the newspaper's clothes, it borrows its credibility. Columns imply editing; a masthead implies an institution worth trusting.</p></div>`,
+  "y2k-retro-futurism": `<div class="t">FUTUREPROOF</div><div class="s">est. 1999 · vol. 2</div><div class="horizon"></div>`,
+  "japanese-minimalism": `<span class="dot"></span><div class="t">間<br>less, placed well</div>`,
+  "quiet-luxury": `<div class="o">Formulation No. 4</div><div class="t">PARSLEY SEED</div><div class="rule"></div>`,
+  "tactile-skeuomorph": `<div class="knob"></div><div class="t">GAIN <b>−12dB</b><br>op-1 field manual</div>`,
+  "immersive-3d": `<div class="orb"></div><div class="t">Enter the world</div><div class="scroll">scroll to begin ↓</div>`,
+  "bento-grid": `<div class="cell hero">One product,<br>told in tiles<span class="num">▤</span></div><div class="cell">Sync<span class="num">40ms</span></div><div class="cell">Teams<span class="num">12k</span></div><div class="cell">Uptime<span class="num">99.99</span></div><div class="cell">Regions<span class="num">14</span></div>`
 };
 
 async function boot(){

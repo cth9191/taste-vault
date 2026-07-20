@@ -113,6 +113,67 @@
       "risk": "Give the product a mascot and let it react to user actions"
     },
     {
+      "id": "y2k-retro-futurism",
+      "name": "Y2K / Retro-Futurism",
+      "recognize": ["chrome and liquid-metal type", "aqua/cyan glows, scan lines", "wireframe horizons, orbs, stars", "the future as imagined in 1999"],
+      "vocabulary": ["chrome type", "scan lines", "aqua glow", "wireframe horizon", "liquid metal", "CD-ROM nostalgia"],
+      "canonical": [{"name":"poolsuite.net","url":"https://poolsuite.net"},{"name":"y2k.institute","url":"https://www.cameronsworld.net"}],
+      "deployFor": "Music, culture drops, playful dev tools - audiences fluent in irony",
+      "imageStyle": "[SUBJECT] as a chrome liquid-metal 3D render on black, aqua and magenta rim glow, subtle scan lines, wireframe grid horizon behind, 1999 CGI optimism",
+      "risk": "Set the logo in actual chrome-gradient type with a lens flare and mean it"
+    },
+    {
+      "id": "japanese-minimalism",
+      "name": "Japanese Minimalism (Ma)",
+      "recognize": ["negative space as the material", "asymmetric single-object placement", "off-white warmth, ink neutrals", "one small red moment"],
+      "vocabulary": ["ma / negative space", "asymmetry", "ink on washi", "single red accent", "silence as luxury", "vertical rhythm"],
+      "canonical": [{"name":"muji.com","url":"https://www.muji.com"},{"name":"kenyahara lineage","url":"https://www.ndc.co.jp/hara/en/"}],
+      "deployFor": "Craft brands, premium tools, anything selling calm and intention",
+      "imageStyle": "single small [SUBJECT] placed low-right on a vast warm off-white ground, soft natural shadow, 80% empty space, one tiny red seal accent, washi paper texture barely visible",
+      "risk": "Leave 85% of the viewport empty and place the product at the golden-ratio point"
+    },
+    {
+      "id": "quiet-luxury",
+      "name": "Quiet Luxury",
+      "recognize": ["light-weight serif, wide tracking", "ivory / taupe / bone palette", "tiny uppercase labels everywhere", "product photography as still life"],
+      "vocabulary": ["wide-tracked serif", "ivory and taupe", "still-life photography", "small caps labels", "apothecary restraint", "no exclamation"],
+      "canonical": [{"name":"aesop.com","url":"https://www.aesop.com"},{"name":"therow.com","url":"https://www.therow.com"}],
+      "deployFor": "Premium DTC, fashion, skincare, high-ticket services - price never mentioned first",
+      "imageStyle": "[SUBJECT] as a muted still-life photograph on an ivory seamless background, soft north-window light, taupe shadows, apothecary calm, no props beyond one natural element",
+      "risk": "Whisper the entire page - light serif, generous tracking, and no word louder than the product"
+    },
+    {
+      "id": "tactile-skeuomorph",
+      "name": "Tactile / Skeuomorph Revival",
+      "recognize": ["real materials: aluminum, rubber, paper", "knobs, dials, switches as UI", "inset shadows, machined edges", "hardware-manual typography"],
+      "vocabulary": ["machined aluminum", "physical controls", "inset shadow", "rubber keycap", "hardware manual", "orange safety accent"],
+      "canonical": [{"name":"teenage.engineering","url":"https://teenage.engineering"},{"name":"panic.com","url":"https://panic.com"}],
+      "deployFor": "Hardware, audio, dev tools with physical soul - products you want to touch",
+      "imageStyle": "[SUBJECT] as a precision product render in machined aluminum and rubber, visible knobs and switches, soft studio light, cream background, orange accent detail, industrial-design catalog quality",
+      "risk": "Make every button look pressable - real depth, real materials, no flat anything"
+    },
+    {
+      "id": "immersive-3d",
+      "name": "Immersive 3D / WebGL Scroll",
+      "recognize": ["3D scene IS the page", "scroll drives camera, not layout", "loader as first impression", "type floats inside the world"],
+      "vocabulary": ["scroll-scrubbed camera", "hero mesh", "volumetric light", "loader moment", "type-in-world", "post-processing grain"],
+      "canonical": [{"name":"lusion.co","url":"https://lusion.co"},{"name":"activetheory.net","url":"https://activetheory.net"}],
+      "deployFor": "Launches, agencies, award-bait - when the site itself must be the proof of craft",
+      "imageStyle": "[SUBJECT] as a single glowing 3D hero object in a dark volumetric scene, cinematic haze, floor reflection, film grain post-processing, one cool key light - composed for WebGL hero recreation",
+      "risk": "One continuous camera flight, no cuts, the whole story in a single scroll"
+    },
+    {
+      "id": "bento-grid",
+      "name": "Bento Grid",
+      "recognize": ["feature story told in tiles", "mixed tile sizes, one hero cell", "each cell a self-contained demo", "generous gaps, soft radii"],
+      "vocabulary": ["bento tiles", "hero cell", "mixed spans", "cell-as-demo", "soft radii grid", "tile hierarchy"],
+      "canonical": [{"name":"apple.com events","url":"https://www.apple.com"},{"name":"linear.app features","url":"https://linear.app"}],
+      "deployFor": "Feature-dense products needing scannable storytelling - the honest icon-grid replacement",
+      "imageStyle": "product feature collage as a bento grid: mixed-size rounded tiles on a neutral ground, each tile containing one real UI detail or stat, one large hero tile, consistent inner shadows and gaps",
+      "risk": "Make every tile a real working demo, not a screenshot - the grid as proof",
+      "warning": "Rapidly becoming a default itself - execute with real content or skip"
+    },
+    {
       "id": "magazine-print",
       "name": "Magazine / Print DNA",
       "recognize": ["masthead, columns, column rules", "drop caps and pull quotes", "serif body, justified text", "issues, editions, folios"],
