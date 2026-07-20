@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "owner": "Chase",
+    "created": "2026-07-20",
+    "version": 1
+  },
+  "dna": {
+    "name": "House DNA",
+    "description": "Constants that run under every collection. These make a page recognizably yours regardless of which look you deploy.",
+    "constants": [
+      "One monumental image anchors the page - timeless subject matter (mountains, sea, statues, architecture), never abstract SaaS blobs",
+      "Imagery is processed, never raw - halftone, dither, grain, ASCII, linework",
+      "Technical marginalia - coordinates, IDs, ruler ticks, registration marks, timestamps",
+      "Type at extremes - monumental display or tiny labels, little middle; serif display or giant cropped sans; mono for micro-labels",
+      "Near-monochrome ground + single warm accent (ember, amber, terracotta, red)"
+    ],
+    "never": [
+      "Purple gradients",
+      "Glossy 3D SaaS blobs",
+      "Untextured stock photography",
+      "Rounded-everything friendliness",
+      "Icon-grid feature rows",
+      "Inter/system-font-only typography",
+      "Evenly-distributed colorful palettes"
+    ]
+  },
+  "collections": [
+    {
+      "id": "print-tech-paper",
+      "name": "Print-Tech Paper",
+      "description": "Crafted-document energy: warm paper grounds, halftone/CMYK texture, registration marks, mono data callouts. The page pretends it was printed and measured.",
+      "deployFor": "Product sites that should feel crafted, considered, human - tools with a soul.",
+      "vocabulary": ["halftone texture", "warm paper ground", "registration marks", "mono data callouts", "dashed grid rules", "single ember accent word", "archival imagery"],
+      "risk": "Render the hero image entirely in halftone dots with visible registration marks",
+      "accent": "#C15F3C"
+    },
+    {
+      "id": "dither-mono",
+      "name": "Dither Mono",
+      "description": "Stark black-and-white with bitmap/dither texture. Serif display carrying full authority. Split-screen form-plus-art layouts. Grain everywhere.",
+      "deployFor": "Portfolios, agencies, waitlists - anywhere restraint reads as confidence.",
+      "vocabulary": ["bitmap dither", "stark B&W", "film grain", "serif display", "split-screen form + art", "giant cropped wordmark", "high contrast"],
+      "risk": "Dither the entire hero image to 1-bit and let a cropped wordmark run off the viewport",
+      "accent": "#141414"
+    },
+    {
+      "id": "vast-quiet-cinematic",
+      "name": "Vast Quiet Cinematic",
+      "description": "One enormous atmospheric landscape - mist, fog, dusk grade - with tiny restrained type floating in it. Silence as scale.",
+      "deployFor": "Enterprise trust, frontier-company gravitas, serious AI/infra brands.",
+      "vocabulary": ["monumental landscape photography", "mist and fog atmosphere", "dusk color grade", "tiny centered sans", "extreme negative space", "two-tone headline", "quiet CTA"],
+      "risk": "Let the landscape occupy 90% of the viewport and shrink the headline to whisper size",
+      "accent": "#2E4A46"
+    },
+    {
+      "id": "data-as-texture",
+      "name": "Data-as-Texture",
+      "description": "Imagery literally rendered from the machine's alphabet - ASCII clouds, binary skies, monochrome 3D worlds. The product's data made visible.",
+      "deployFor": "AI and technical products that deserve spectacle without stock-3D slop.",
+      "vocabulary": ["ASCII-rendered imagery", "binary texture", "data-as-material", "decrypt/scramble text", "monochrome 3D world", "mono labels", "amber-on-dark"],
+      "risk": "Rebuild the hero photo out of the product's own log output or characters",
+      "accent": "#D9A441"
+    },
+    {
+      "id": "classical-remix",
+      "name": "Classical Remix",
+      "description": "Renaissance painting and classical sculpture colliding with soft modern UI. Serif italic emphasis. Gold details. Timeless gravitas humanizing new tech.",
+      "deployFor": "Heavy or intimidating domains - legal, finance, psychology - that need warmth and weight at once.",
+      "vocabulary": ["classical painting imagery", "serif italic emphasis word", "soft sky palette", "gold accents", "canvas grain", "orbit-line overlay", "rounded glass input"],
+      "risk": "Put a 500-year-old artwork behind a chat input and let them share the frame",
+      "accent": "#8C6A3F"
+    },
+    {
+      "id": "illustrated-storybook",
+      "name": "Illustrated Storybook",
+      "description": "Painterly illustrated worlds with chunky display type or type-masking. Warm, humane, a little wondrous - consumer without being childish.",
+      "deployFor": "Consumer products selling warmth, curiosity, delight.",
+      "vocabulary": ["painterly illustration", "chunky display wordmark", "type-masked imagery", "storybook scene", "saturated but graded palette", "split illustration panel"],
+      "risk": "Mask the entire brand wordmark over the illustrated scene so letters become windows",
+      "accent": "#2F5233"
+    }
+  ],
+  "entries": [
+    { "id": "stillpage", "file": "stillpage.png", "title": "Stillpage", "collection": "print-tech-paper", "family": "warm editorial x print DNA", "vocabulary": ["halftone CMYK dot texture", "warm paper ground", "mono coordinate labels", "dashed grid rules", "single orange accent word", "lone-tree halftone imagery", "pill nav"], "note": "The template for the whole collection - paper, coordinates, one ember word.", "added": "2026-07-20" },
+    { "id": "spade", "file": "spade.png", "title": "SPADE", "collection": "print-tech-paper", "family": "print-tech x data", "vocabulary": ["pale sage ground", "topographic line illustration", "mono data callouts", "transaction-ID chips", "film-strip ticks", "grotesk display"], "note": "Data marginalia as decoration that encodes truth - transaction ID, coordinates.", "added": "2026-07-20" },
+    { "id": "sails-collage", "file": "sails-collage.png", "title": "Halftone Sails Collage", "collection": "print-tech-paper", "family": "print DNA collage", "vocabulary": ["halftone dot fields", "cream and black blocks", "archival sailing photography", "ruler ticks", "crop marks", "compass overlay"], "note": "Pure print-craft collage - the texture IS the composition.", "added": "2026-07-20" },
+    { "id": "monolith", "file": "monolith.png", "title": "MONOLITH", "collection": "dither-mono", "family": "brutalist-editorial B&W", "vocabulary": ["dithered Parthenon imagery", "giant cropped footer wordmark", "stark studio dark", "clean sans body", "high contrast"], "note": "Classical subject + machine dither + wordmark running off canvas.", "added": "2026-07-20" },
+    { "id": "castle", "file": "castle.png", "title": "Castle", "collection": "dither-mono", "family": "print-tech waitlist", "vocabulary": ["1-bit bitmap castle illustration", "huge serif display", "stark two-field layout", "black CTA block"], "note": "Waitlist reduced to essentials; dither carries all the personality.", "added": "2026-07-20" },
+    { "id": "asterisk-login", "file": "asterisk-login.png", "title": "Asterisk Login", "collection": "dither-mono", "family": "editorial B&W split", "vocabulary": ["split-screen form + art", "grainy inverted B&W photo", "serif display", "asterisk glyph mark", "stark white panel"], "note": "Login as editorial spread - form left, art right.", "added": "2026-07-20" },
+    { "id": "dark-login-rock", "file": "dark-login-rock.png", "title": "Dark Login (Floating Rock)", "collection": "dither-mono", "family": "cinematic B&W split", "vocabulary": ["grainy surreal B&W photography", "floating monolith imagery", "serif welcome display", "charcoal form panel", "split-screen"], "note": "Same split pattern, dark variant - surreal photo does the talking.", "added": "2026-07-20" },
+    { "id": "ctgt-hero", "file": "ctgt-hero.png", "title": "CTGT (hero)", "collection": "vast-quiet-cinematic", "family": "editorial minimalism x cinematic", "vocabulary": ["vast B&W mountain photography", "mist atmosphere", "tiny centered sans", "extreme whitespace", "logo as anchor"], "note": "Maximum image, minimum words. Scale = authority.", "added": "2026-07-20" },
+    { "id": "ctgt-alt", "file": "ctgt-alt.png", "title": "CTGT (alt hero)", "collection": "vast-quiet-cinematic", "family": "editorial minimalism", "vocabulary": ["two-tone headline black-to-gray", "fog gradient", "small black CTA block", "left-aligned column", "green-graded crags"], "note": "Two-tone headline trick - emphasis via color weight, not size.", "added": "2026-07-20" },
+    { "id": "nexora", "file": "nexora.png", "title": "Nexora", "collection": "vast-quiet-cinematic", "family": "cinematic landscape", "vocabulary": ["teal-graded coastal photography", "ember sunset accent", "clean white sans", "scroll cue marginalia", "footer feature ticker"], "note": "Color grade IS the brand - teal world, one ember horizon.", "added": "2026-07-20" },
+    { "id": "prompting-company", "file": "prompting-company.png", "title": "The Prompting Company", "collection": "vast-quiet-cinematic", "family": "soft editorial serif", "vocabulary": ["SF fog photography", "centered serif display", "airy pastel sky", "pill CTAs", "small-caps masthead"], "note": "Soft variant - serif + fog instead of sans + crag.", "added": "2026-07-20" },
+    { "id": "climora", "file": "climora.png", "title": "Climora", "collection": "data-as-texture", "family": "cinematic data-texture", "vocabulary": ["clouds rendered from amber binary characters", "dark teal sky", "data-as-material", "golden accent CTAs", "star-rating chip"], "note": "The clouds ARE the data. Texture carries the product story.", "added": "2026-07-20" },
+    { "id": "ascii-web-section", "file": "ascii-web-section.png", "title": "ASCII Web Section", "collection": "data-as-texture", "family": "editorial x data-art", "vocabulary": ["blue ASCII-character illustrations", "white editorial ground", "serif headlines", "card grid with expand chips", "globe-as-characters"], "note": "Light-mode proof the trick works on white - ASCII as product art.", "added": "2026-07-20" },
+    { "id": "igloo", "file": "igloo.png", "title": "IGLOO", "collection": "data-as-texture", "family": "cinematic dark x WebGL", "vocabulary": ["monochrome 3D ice world", "glowing translucent material", "decrypt scramble text", "mono labels", "single hero object"], "note": "WebGL variant - one lit object in a monochrome world.", "added": "2026-07-20" },
+    { "id": "juris", "file": "juris.png", "title": "Juris", "collection": "classical-remix", "family": "classical x soft-futurism", "vocabulary": ["Renaissance Lady Justice painting", "soft sky blue ground", "serif italic emphasis word", "rounded glass input", "gold scale details", "badge chip"], "note": "Legal AI humanized by 500-year-old visual authority.", "added": "2026-07-20" },
+    { "id": "break-the-pattern", "file": "break-the-pattern.png", "title": "Break the Pattern", "collection": "classical-remix", "family": "classical x grain", "vocabulary": ["Creation of Adam crop", "canvas grain texture", "serif + mono type mix", "orbit-line overlay", "dusty blue palette"], "note": "Sistine hands + orbit overlay - antiquity annotated like a diagram.", "added": "2026-07-20" },
+    { "id": "marble", "file": "marble.png", "title": "MARBLE", "collection": "illustrated-storybook", "family": "playful x cinematic illustration", "vocabulary": ["giant chunky wordmark masking sky", "storybook sea illustration", "serif subline", "red pill CTA", "type-as-window"], "note": "Wordmark letters become windows into the illustrated world.", "added": "2026-07-20" },
+    { "id": "vitra", "file": "vitra.png", "title": "Vitra", "collection": "illustrated-storybook", "family": "warm illustrated split", "vocabulary": ["painterly lush illustration", "deep green display sans", "split panel layout", "avatar social proof row", "warm florals"], "note": "Illustration panel right, calm type panel left - warmth without noise.", "added": "2026-07-20" },
+    { "id": "linq", "file": "linq.png", "title": "linq", "collection": "illustrated-storybook", "family": "cinematic illustrated dark", "vocabulary": ["painterly dusk landscape", "dimmed vignette", "centered phone UI", "highlight-boxed headline words", "muted city silhouette"], "note": "Storybook gone dark - painted world dimmed behind product UI.", "added": "2026-07-20" }
+  ]
+}

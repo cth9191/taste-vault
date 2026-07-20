@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taste Vault</title>
+<style>
+  :root{
+    --paper:#F4EFE6; --paper-deep:#ECE5D8; --ink:#211E19; --muted:#7A7266;
+    --line:#D8CFBF; --ember:#C15F3C; --card:#FBF8F2;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle, rgba(33,30,25,.055) 1px, transparent 1px);
+    background-size:14px 14px;
+    color:var(--ink);
+    font-family:'Segoe UI',system-ui,sans-serif;
+    line-height:1.5;
+  }
+  .mono{font-family:Consolas,'Courier New',monospace}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 28px 90px}
+
+  /* header */
+  header{padding:44px 0 26px;border-bottom:2px solid var(--ink);position:relative}
+  .reg{position:absolute;width:14px;height:14px;border:1px solid var(--muted)}
+  .reg::before,.reg::after{content:"";position:absolute;background:var(--muted)}
+  .reg::before{left:50%;top:-3px;bottom:-3px;width:1px}
+  .reg::after{top:50%;left:-3px;right:-3px;height:1px}
+  .reg.tl{top:14px;left:-22px}.reg.tr{top:14px;right:-22px}
+  .h-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+  .h-kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ember)}
+  .h-coord{font-size:11px;color:var(--muted);letter-spacing:.08em}
+  h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);margin:.15em 0 .1em;letter-spacing:-.01em}
+  h1 em{font-style:italic;color:var(--ember)}
+  .h-sub{color:var(--muted);max-width:62ch;font-size:14.5px;margin:0}
+
+  /* dna strip */
+  .dna{margin:26px 0 0;border:1px solid var(--line);background:var(--card)}
+  .dna summary{cursor:pointer;padding:12px 18px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);display:flex;justify-content:space-between;align-items:center;user-select:none}
+  .dna summary::-webkit-details-marker{display:none}
+  .dna summary .mono{color:var(--muted);letter-spacing:0;text-transform:none}
+  .dna-body{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+  .dna-col{padding:16px 18px}
+  .dna-col+.dna-col{border-left:1px solid var(--line)}
+  .dna-col h3{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px;color:var(--muted)}
+  .dna-col ul{margin:0;padding-left:16px;font-size:13px}
+  .dna-col li{margin-bottom:6px}
+  .dna-col.never li{color:#8C3B22}
+  @media(max-width:720px){.dna-body{grid-template-columns:1fr}.dna-col+.dna-col{border-left:none;border-top:1px solid var(--line)}}
+
+  /* tabs */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;padding:22px 0 6px;align-items:center}
+  .tab{border:1px solid var(--ink);background:transparent;color:var(--ink);font-family:Consolas,monospace;font-size:12px;padding:6px 13px;cursor:pointer;letter-spacing:.04em}
+  .tab:hover{background:var(--paper-deep)}
+  .tab.active{background:var(--ink);color:var(--paper)}
+  .tab .n{color:var(--ember)}
+  .tab.active .n{color:#F1B08E}
+
+  /* collection panel */
+  .cpanel{display:none;border:1px solid var(--ink);background:var(--card);margin:14px 0 8px;position:relative}
+  .cpanel.show{display:block}
+  .cpanel-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;padding:18px 20px 4px;flex-wrap:wrap}
+  .cpanel h2{font-family:Georgia,serif;font-weight:400;font-size:26px;margin:0}
+  .cpanel .accent-dot{display:inline-block;width:11px;height:11px;margin-right:9px;border:1px solid var(--ink)}
+  .cpanel p.desc{padding:0 20px;color:var(--muted);font-size:14px;max-width:75ch;margin:8px 0 2px}
+  .cpanel .deploy{padding:0 20px;font-size:13px;margin:6px 0 0}
+  .cpanel .deploy b{letter-spacing:.06em}
+  .cpanel .vocab{padding:12px 20px 18px;display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-family:Consolas,monospace;font-size:12px;background:var(--paper-deep);border:1px solid var(--line);padding:3px 10px}
+  .copybar{border-top:1px dashed var(--line);padding:12px 20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-family:Consolas,monospace;font-size:12.5px;padding:8px 16px;cursor:pointer;letter-spacing:.04em}
+  .btn:hover{background:var(--ember);border-color:var(--ember)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.ghost:hover{background:var(--paper-deep)}
+  .copymsg{font-family:Consolas,monospace;font-size:12px;color:var(--ember);opacity:0;transition:opacity .25s}
+  .copymsg.show{opacity:1}
+
+  /* grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;padding-top:18px}
+  .card{border:1px solid var(--ink);background:var(--card);cursor:pointer;transition:transform .12s, box-shadow .12s;display:flex;flex-direction:column}
+  .card:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+  .thumb{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--ink);background:var(--paper-deep)}
+  .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:saturate(.96)}
+  .card-body{padding:12px 14px 6px;flex:1}
+  .card-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .card h3{font-family:Georgia,serif;font-weight:400;font-size:18px;margin:0}
+  .card .fam{font-family:Consolas,monospace;font-size:10.5px;color:var(--muted);text-align:right}
+  .card .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:9px}
+  .card .chip{font-size:10.5px;padding:2px 7px}
+  .card .more{color:var(--muted);font-family:Consolas,monospace;font-size:10.5px;padding:2px 0}
+  .card-foot{padding:8px 14px 11px;display:flex;justify-content:space-between;align-items:center}
+  .card-foot .col-tag{font-family:Consolas,monospace;font-size:10.5px;letter-spacing:.06em;color:var(--ember)}
+  .card-foot .idx{font-family:Consolas,monospace;font-size:10.5px;color:var(--muted)}
+
+  /* modal */
+  dialog{border:1px solid var(--ink);background:var(--card);color:var(--ink);padding:0;max-width:min(1040px,94vw);width:100%;box-shadow:8px 8px 0 rgba(33,30,25,.85)}
+  dialog::backdrop{background:rgba(33,30,25,.55)}
+  .m-img{border-bottom:1px solid var(--ink);background:var(--paper-deep)}
+  .m-img img{width:100%;max-height:56vh;object-fit:contain;display:block}
+  .m-body{padding:18px 22px 20px}
+  .m-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .m-body h3{font-family:Georgia,serif;font-weight:400;font-size:26px;margin:0}
+  .m-fam{font-family:Consolas,monospace;font-size:12px;color:var(--muted)}
+  .m-note{font-size:14px;color:var(--muted);margin:8px 0 12px;max-width:80ch}
+  .m-vocab{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+  .m-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:14px}
+
+  footer{border-top:2px solid var(--ink);margin-top:60px;padding-top:14px;display:flex;justify-content:space-between;font-family:Consolas,monospace;font-size:11px;color:var(--muted);flex-wrap:wrap;gap:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="reg tl"></span><span class="reg tr"></span>
+    <div class="h-top">
+      <div class="h-kicker">Personal taste catalog · 6 collections</div>
+      <div class="h-coord mono" id="coordCount"></div>
+    </div>
+    <h1>Taste <em>Vault</em></h1>
+    <p class="h-sub">Inspiration in, vocabulary out. Every screenshot is broken into objective design language, clustered into collections, and compiled into briefs Claude Code can act on.</p>
+    <details class="dna" open>
+      <summary><span>House DNA — constants under every collection</span><span class="mono">§ 00</span></summary>
+      <div class="dna-body">
+        <div class="dna-col"><h3>Always</h3><ul id="dnaConstants"></ul></div>
+        <div class="dna-col never"><h3>Never</h3><ul id="dnaNever"></ul></div>
+      </div>
+    </details>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Collections"></nav>
+  <section id="panels"></section>
+  <main class="grid" id="grid"></main>
+
+  <footer>
+    <span>TASTE VAULT · v1</span>
+    <span id="footStamp"></span>
+  </footer>
+</div>
+
+<dialog id="modal">
+  <div class="m-img"><img id="mImg" alt=""></div>
+  <div class="m-body">
+    <div class="m-top"><h3 id="mTitle"></h3><span class="m-fam mono" id="mFam"></span></div>
+    <p class="m-note" id="mNote"></p>
+    <div class="m-vocab" id="mVocab"></div>
+    <div class="m-actions">
+      <button class="btn" id="mCopyVocab">COPY VOCABULARY</button>
+      <button class="btn ghost" id="mClose">CLOSE</button>
+      <span class="copymsg" id="mMsg">copied →</span>
+    </div>
+  </div>
+</dialog>
+
+<script>
+let DATA=null, active='all';
+
+async function boot(){
+  DATA = await (await fetch('data/gallery.json')).json();
+  document.getElementById('dnaConstants').innerHTML = DATA.dna.constants.map(c=>`<li>${c}</li>`).join('');
+  document.getElementById('dnaNever').innerHTML = DATA.dna.never.map(c=>`<li>${c}</li>`).join('');
+  document.getElementById('coordCount').textContent = `${DATA.entries.length} ENTRIES · ${DATA.collections.length} COLLECTIONS`;
+  document.getElementById('footStamp').textContent = `LAST INGEST ${DATA.entries.map(e=>e.added).sort().at(-1)} · ${DATA.entries.length} SPECIMENS`;
+  renderTabs(); renderPanels(); renderGrid();
+}
+
+function renderTabs(){
+  const t = document.getElementById('tabs');
+  const mk=(id,label,n)=>`<button class="tab${active===id?' active':''}" data-id="${id}">${label} <span class="n">${n}</span></button>`;
+  t.innerHTML = mk('all','ALL',DATA.entries.length) + DATA.collections.map(c=>
+    mk(c.id, c.name.toUpperCase(), DATA.entries.filter(e=>e.collection===c.id).length)).join('');
+  t.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{active=b.dataset.id;renderTabs();renderPanels();renderGrid();});
+}
+
+function renderPanels(){
+  const p = document.getElementById('panels');
+  p.innerHTML = DATA.collections.map(c=>`
+    <div class="cpanel${active===c.id?' show':''}" id="panel-${c.id}">
+      <div class="cpanel-head">
+        <h2><span class="accent-dot" style="background:${c.accent}"></span>${c.name}</h2>
+        <span class="mono" style="font-size:11px;color:var(--muted)">RISK: ${c.risk}</span>
+      </div>
+      <p class="desc">${c.description}</p>
+      <p class="deploy"><b class="mono" style="font-size:11px;letter-spacing:.14em">DEPLOY FOR</b> — ${c.deployFor}</p>
+      <div class="vocab">${c.vocabulary.map(v=>`<span class="chip">${v}</span>`).join('')}</div>
+      <div class="copybar">
+        <button class="btn" onclick="copyBrief('${c.id}')">COPY BRIEF BLOCK</button>
+        <button class="btn ghost" onclick="copyVocab('${c.id}')">COPY VOCAB ONLY</button>
+        <span class="copymsg" id="msg-${c.id}">copied → paste into Claude Code</span>
+      </div>
+    </div>`).join('');
+}
+
+function renderGrid(){
+  const g = document.getElementById('grid');
+  const list = DATA.entries.filter(e=>active==='all'||e.collection===active);
+  g.innerHTML = list.map((e,i)=>{
+    const col = DATA.collections.find(c=>c.id===e.collection);
+    const chips = e.vocabulary.slice(0,3).map(v=>`<span class="chip">${v}</span>`).join('');
+    const extra = e.vocabulary.length>3?`<span class="more">+${e.vocabulary.length-3}</span>`:'';
+    return `<article class="card" data-id="${e.id}">
+      <div class="thumb"><img loading="lazy" src="images/${e.file}" alt="${e.title}"></div>
+      <div class="card-body">
+        <div class="card-top"><h3>${e.title}</h3><span class="fam">${e.family}</span></div>
+        <div class="chips">${chips}${extra}</div>
+      </div>
+      <div class="card-foot"><span class="col-tag">◆ ${col.name}</span><span class="idx">${String(i+1).padStart(2,'0')} / ${String(list.length).padStart(2,'0')}</span></div>
+    </article>`;
+  }).join('');
+  g.querySelectorAll('.card').forEach(c=>c.onclick=()=>openModal(c.dataset.id));
+}
+
+function briefFor(id){
+  const c = DATA.collections.find(x=>x.id===id);
+  const refs = DATA.entries.filter(e=>e.collection===id).slice(0,2).map(e=>e.title).join(', ');
+  return `Aesthetic: ${c.name.toLowerCase()} (${DATA.entries.find(e=>e.collection===id)?.family||''})
+Vocabulary: ${c.vocabulary.join(', ')}
+Reference feel: ${refs}
+House DNA: ${DATA.dna.constants.map(s=>s.split(' - ')[0]).join('; ')}
+Never: ${DATA.dna.never.join(', ')}
+One risk: ${c.risk}
+Everything else: your call. Surprise me.`;
+}
+
+function flash(id){const m=document.getElementById(id);m.classList.add('show');setTimeout(()=>m.classList.remove('show'),1800);}
+function copyBrief(id){navigator.clipboard.writeText(briefFor(id));flash('msg-'+id);}
+function copyVocab(id){const c=DATA.collections.find(x=>x.id===id);navigator.clipboard.writeText(c.vocabulary.join(', '));flash('msg-'+id);}
+
+function openModal(id){
+  const e = DATA.entries.find(x=>x.id===id);
+  document.getElementById('mImg').src='images/'+e.file;
+  document.getElementById('mTitle').textContent=e.title;
+  document.getElementById('mFam').textContent=e.family;
+  document.getElementById('mNote').textContent=e.note;
+  document.getElementById('mVocab').innerHTML=e.vocabulary.map(v=>`<span class="chip">${v}</span>`).join('');
+  document.getElementById('mCopyVocab').onclick=()=>{navigator.clipboard.writeText(e.vocabulary.join(', '));flash('mMsg');};
+  document.getElementById('modal').showModal();
+}
+document.getElementById('mClose').onclick=()=>document.getElementById('modal').close();
+document.getElementById('modal').onclick=(ev)=>{if(ev.target.id==='modal')ev.target.close();};
+
+boot();
+</script>
+</body>
+</html>
