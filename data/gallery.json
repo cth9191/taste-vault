@@ -2,7 +2,8 @@
   "meta": {
     "owner": "Chase",
     "created": "2026-07-20",
-    "version": 2
+    "version": 2,
+    "imagesPath": "C:\\Users\\Chase\\projects\\taste-vault\\images\\"
   },
   "dna": {
     "name": "House DNA",

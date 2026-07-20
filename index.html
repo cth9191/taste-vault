@@ -252,10 +252,10 @@
       <p class="mono" id="mRecipe"></p>
     </div>
     <div class="m-actions">
-      <button class="btn" id="mCopyVocab">COPY VOCABULARY</button>
+      <button class="btn" id="mCopyBrief">COPY BRIEF</button>
       <button class="btn" id="mCopyRecipe">COPY IMAGE PROMPT</button>
       <button class="btn ghost" id="mClose">CLOSE</button>
-      <span class="copymsg" id="mMsg">copied →</span>
+      <span class="copymsg" id="mMsg">copied → fill the [FILL] slots</span>
     </div>
   </div>
 </dialog>
@@ -396,6 +396,24 @@ Everything else: your call. Surprise me.`;
 function copyStyleBrief(id){navigator.clipboard.writeText(styleBriefFor(id));flash('smsg-'+id);}
 function copyStyleVocab(id){const s=STYLES.styles.find(x=>x.id===id);navigator.clipboard.writeText(s.vocabulary.join(', '));flash('smsg-'+id);}
 function copyBrief(id){navigator.clipboard.writeText(briefFor(id));flash('msg-'+id);}
+
+function entryBriefFor(id){
+  const e = DATA.entries.find(x=>x.id===id);
+  const c = DATA.collections.find(x=>x.id===e.collection);
+  const imgPath = (DATA.meta.imagesPath||'') + e.file;
+  return `Build [FILL: what you're building] for [FILL: audience].
+
+Aesthetic: ${e.family} (collection: ${c.name.toLowerCase()})
+Vocabulary: ${e.vocabulary.join(', ')}
+Reference: "${e.title}" - Read the screenshot at ${imgPath} before designing. Match its feel, not its content.
+Intent: [FILL: 1-2 lines - what this should feel like and why]
+House DNA: ${DATA.dna.constants.map(s=>s.split(' - ')[0]).join('; ')}
+Never: ${DATA.dna.never.join(', ')}
+One risk: ${c.risk}${e.imageRecipe?`
+Hero asset: fill [SUBJECT] and generate via Higgsfield gpt_image_2 at 2K before building:
+  "${e.imageRecipe}"`:''}
+Everything else: your call. Surprise me.`;
+}
 function copyVocab(id){const c=DATA.collections.find(x=>x.id===id);navigator.clipboard.writeText(c.vocabulary.join(', '));flash('msg-'+id);}
 
 function openModal(id){
@@ -412,7 +430,7 @@ function openModal(id){
     document.getElementById('mCopyRecipe').style.display='';
     document.getElementById('mCopyRecipe').onclick=()=>{navigator.clipboard.writeText(e.imageRecipe);flash('mMsg');};
   } else { wrap.style.display='none'; document.getElementById('mCopyRecipe').style.display='none'; }
-  document.getElementById('mCopyVocab').onclick=()=>{navigator.clipboard.writeText(e.vocabulary.join(', '));flash('mMsg');};
+  document.getElementById('mCopyBrief').onclick=()=>{navigator.clipboard.writeText(entryBriefFor(e.id));flash('mMsg');};
   document.getElementById('modal').showModal();
 }
 document.getElementById('mClose').onclick=()=>document.getElementById('modal').close();
