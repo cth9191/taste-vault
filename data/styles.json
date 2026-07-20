@@ -1,0 +1,126 @@
+{
+  "description": "Reference styles - the standard aesthetic families of the modern web. Borrowed vocabulary for looks your own inspo doesn't cover yet. Family name in a brief carries fifty decisions.",
+  "styles": [
+    {
+      "id": "editorial-minimalism",
+      "name": "Editorial Minimalism",
+      "recognize": ["calm neutral grounds, near-black ink", "tight-tracked sans, medium weights", "generous whitespace", "one muted accent, used rarely"],
+      "vocabulary": ["restraint", "tight tracking", "quiet confidence", "keyboard-first", "muted accent", "small type allowed"],
+      "canonical": [{"name":"linear.app","url":"https://linear.app"},{"name":"stripe.com","url":"https://stripe.com"},{"name":"vercel.com","url":"https://vercel.com"}],
+      "deployFor": "Developer tools, B2B SaaS, buyers who distrust marketing",
+      "imageStyle": "minimal product UI screenshot floating on a calm near-white ground, soft single shadow, no scene, no decoration",
+      "risk": "Shrink the headline below what feels safe and let whitespace carry the page"
+    },
+    {
+      "id": "warm-editorial",
+      "name": "Warm Editorial",
+      "recognize": ["cream / clay / terracotta palette", "serif body text, not just headlines", "soft rounded buttons", "human illustration or none"],
+      "vocabulary": ["warm paper", "humanist serif", "clay accent", "bookish", "unhurried"],
+      "canonical": [{"name":"anthropic.com","url":"https://www.anthropic.com"},{"name":"notion.com","url":"https://www.notion.com"},{"name":"are.na","url":"https://www.are.na"}],
+      "deployFor": "Knowledge tools, reading products, depth-over-speed brands",
+      "imageStyle": "[SUBJECT] as a warm minimal illustration on cream paper ground, terracotta and clay tones, soft edges, book-plate composition",
+      "risk": "Set the entire body in serif, not just display",
+      "warning": "Cream + serif + terracotta is now an AI-default cluster - legitimate family, dangerous reflex"
+    },
+    {
+      "id": "terminal-core",
+      "name": "Terminal-Core",
+      "recognize": ["monospace as primary voice", "phosphor green/amber on near-black", "CLI metaphors: prompts, flags, logs", "density welcomed"],
+      "vocabulary": ["monospace", "phosphor", "CLI metaphor", "utilitarian", "dense", "log-line rhythm"],
+      "canonical": [{"name":"warp.dev","url":"https://www.warp.dev"},{"name":"raycast.com","url":"https://www.raycast.com"},{"name":"ollama.com","url":"https://ollama.com"}],
+      "deployFor": "Dev tools, infra - buyers who live in a terminal",
+      "imageStyle": "[SUBJECT] rendered as glowing phosphor-green ASCII art on a near-black terminal screen, subtle scanlines, CRT glow",
+      "risk": "Make the hero an actual live terminal session typing itself"
+    },
+    {
+      "id": "swiss-international",
+      "name": "Swiss / International",
+      "recognize": ["mathematical grid, visible logic", "neo-grotesque sans, huge, flush-left", "black/white + single primary red", "asymmetric balance, zero decoration"],
+      "vocabulary": ["grid logic", "neo-grotesque", "flush-left", "asymmetric", "objective", "single red accent"],
+      "canonical": [{"name":"grillitype.com","url":"https://www.grillitype.com"},{"name":"helvetica lineage","url":"https://www.helveticanow.com"}],
+      "deployFor": "Portfolios, foundries, institutions - clarity as product",
+      "imageStyle": "flat geometric composition: black bars and one red square on white, mathematical grid alignment, no texture, no depth",
+      "risk": "One typeface, three weights, one red square - nothing else"
+    },
+    {
+      "id": "brutalist-raw",
+      "name": "Brutalist (Raw Web)",
+      "recognize": ["system serifs, underlined blue links", "visible borders, tables, hrs", "no grid system, no imagery", "speed and honesty as flex"],
+      "vocabulary": ["raw HTML", "default styles", "anti-design", "visible structure", "text-first"],
+      "canonical": [{"name":"craigslist.org","url":"https://www.craigslist.org"},{"name":"danluu.com","url":"https://danluu.com"}],
+      "deployFor": "Personal sites, engineering blogs, ironic luxury",
+      "imageStyle": null,
+      "risk": "Ship default Times New Roman and let content be the only design"
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "recognize": ["thick black outlines on everything", "hard offset shadows, zero blur", "saturated flat fills: yellow, pink, lime", "chunky type, unapologetic buttons"],
+      "vocabulary": ["hard shadow", "3px outline", "flat loud fills", "chunky", "cartoon physics"],
+      "canonical": [{"name":"gumroad.com","url":"https://gumroad.com"},{"name":"figma.com","url":"https://www.figma.com"},{"name":"poolsuite.net","url":"https://poolsuite.net"}],
+      "deployFor": "Creator tools, indie products, friendly energy without corporate polish",
+      "imageStyle": "[SUBJECT] as a flat sticker-style illustration with thick black outlines, saturated flat fills, hard offset shadow, white or loud solid background",
+      "risk": "Give every element a hard 8px offset shadow and zero border-radius"
+    },
+    {
+      "id": "neon-brutalist",
+      "name": "Neon Brutalist / Editorial Chaos",
+      "recognize": ["single saturated hue on black/white", "deliberate typeface clashing", "hard edges, aggressive crops", "zine DNA, editorial density"],
+      "vocabulary": ["type clash", "single screaming hue", "zine energy", "aggressive crop", "controlled ugly"],
+      "canonical": [{"name":"theverge.com","url":"https://www.theverge.com"},{"name":"pitchfork.com","url":"https://pitchfork.com"}],
+      "deployFor": "Media brands, culture products, liner-notes audiences",
+      "imageStyle": "[SUBJECT] photo with harsh duotone treatment in magenta and black, aggressive crop, halftone grain, zine-xerox quality",
+      "risk": "Pair a condensed all-caps grotesque with an italic serif in the same headline"
+    },
+    {
+      "id": "data-dense-pro",
+      "name": "Data-Dense Pro",
+      "recognize": ["dark UI ground, tight spacing", "tabular numerals, mono for data", "charts as first-class brand assets", "semantic state color"],
+      "vocabulary": ["tabular nums", "chart-as-hero", "tight spacing", "semantic state", "density"],
+      "canonical": [{"name":"clickhouse.com","url":"https://clickhouse.com"},{"name":"posthog.com","url":"https://posthog.com"},{"name":"sentry.io","url":"https://sentry.io"}],
+      "deployFor": "Analytics, observability, fintech - density = competence",
+      "imageStyle": "dense dark dashboard UI with glowing sparkline charts, amber and green state colors, tabular data grids, dark blue-gray panels",
+      "risk": "Make a live chart the hero image - real data, no illustration"
+    },
+    {
+      "id": "cinematic-dark",
+      "name": "Cinematic Dark",
+      "recognize": ["near-black ground, atmospheric gradients", "ultra-light oversized display type", "letterspaced uppercase whispers", "scroll-triggered reveals, media-heavy"],
+      "vocabulary": ["oversized thin type", "atmosphere", "scroll theater", "letterspaced caps", "vignette"],
+      "canonical": [{"name":"runwayml.com","url":"https://runwayml.com"},{"name":"nvidia.com","url":"https://www.nvidia.com"},{"name":"ferrari.com","url":"https://www.ferrari.com"}],
+      "deployFor": "Launches, hardware, AI/creative tools - desire before spec sheet",
+      "imageStyle": "[SUBJECT] emerging from near-black darkness, single dramatic rim light, atmospheric haze, film-grade contrast, cinematic 2.35:1 crop energy",
+      "risk": "Weight 100 display type at 8rem with .3em letterspacing"
+    },
+    {
+      "id": "glass-soft-futurism",
+      "name": "Glass / Soft-Futurism",
+      "recognize": ["backdrop blur, translucent surfaces", "pastel gradient atmospheres", "large radii, layered soft shadows", "SF-adjacent geometric sans"],
+      "vocabulary": ["frosted blur", "translucency", "soft depth", "pastel atmosphere", "rounded warmth"],
+      "canonical": [{"name":"apple.com","url":"https://www.apple.com"},{"name":"arc.net","url":"https://arc.net"}],
+      "deployFor": "Consumer apps, OS-adjacent products - mass-market premium",
+      "imageStyle": "[SUBJECT] behind frosted glass panels, soft pastel gradient atmosphere (blue-lilac-peach), translucent layered depth, gentle studio light",
+      "risk": "Stack three translucent layers deep and let content blur through them"
+    },
+    {
+      "id": "playful-color",
+      "name": "Playful Color / Illustrated",
+      "recognize": ["high-saturation multi-color palette", "illustration and mascots first-class", "fully rounded buttons, bouncy motion", "no sharp corners"],
+      "vocabulary": ["saturated", "mascot-led", "bounce motion", "rounded-full", "confetti moment"],
+      "canonical": [{"name":"duolingo.com","url":"https://www.duolingo.com"},{"name":"canva.com","url":"https://www.canva.com"},{"name":"headspace.com","url":"https://www.headspace.com"}],
+      "deployFor": "Consumer education, wellness - anywhere anxiety is the enemy",
+      "imageStyle": "[SUBJECT] as a friendly flat illustration with rounded shapes, high-saturation palette on white, subtle paper-cut depth, cheerful character energy",
+      "risk": "Give the product a mascot and let it react to user actions"
+    },
+    {
+      "id": "magazine-print",
+      "name": "Magazine / Print DNA",
+      "recognize": ["masthead, columns, column rules", "drop caps and pull quotes", "serif body, justified text", "issues, editions, folios"],
+      "vocabulary": ["masthead", "drop cap", "pull quote", "column rhythm", "print authority"],
+      "canonical": [{"name":"nytimes.com features","url":"https://www.nytimes.com"},{"name":"a24films.com","url":"https://a24films.com"},{"name":"criterion.com","url":"https://www.criterion.com"}],
+      "deployFor": "Longform content, newsletters, culture brands - words are the product",
+      "imageStyle": "[SUBJECT] as an archival editorial photograph, muted print reproduction quality, slight ink-on-newsprint texture, composed for a three-column broadsheet layout",
+      "risk": "Open the page with a full masthead and a drop cap like a Sunday edition"
+    }
+  ]
+}

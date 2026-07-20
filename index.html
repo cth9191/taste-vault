@@ -113,6 +113,77 @@
   .m-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:14px}
 
   footer{border-top:2px solid var(--ink);margin-top:60px;padding-top:14px;display:flex;justify-content:space-between;font-family:Consolas,monospace;font-size:11px;color:var(--muted);flex-wrap:wrap;gap:6px}
+
+  /* ---------- reference styles tab ---------- */
+  .styles-intro{display:none;border:1px solid var(--ink);background:var(--card);padding:14px 20px;margin:14px 0 4px;font-size:13.5px;color:var(--muted);max-width:100%}
+  .styles-intro.show{display:block}
+  .scard{border:1px solid var(--ink);background:var(--card);display:flex;flex-direction:column}
+  .scard .spx{height:132px;border-bottom:1px solid var(--ink);padding:16px 18px;overflow:hidden;position:relative}
+  .scard .s-body{padding:12px 14px 8px;flex:1}
+  .scard h3{font-family:Georgia,serif;font-weight:400;font-size:18px;margin:0 0 2px}
+  .scard .warn{font-family:Consolas,monospace;font-size:10px;color:#8C3B22;margin:4px 0 0}
+  .scard .rec{font-size:12px;color:var(--muted);margin:6px 0 8px;padding-left:14px}
+  .scard .rec li{margin-bottom:2px}
+  .scard .chips{display:flex;flex-wrap:wrap;gap:4px}
+  .scard .chip{font-size:10.5px;padding:2px 7px}
+  .scard .links{padding:0 14px;font-family:Consolas,monospace;font-size:11px}
+  .scard .links a{color:var(--ember);text-decoration:none;margin-right:10px}
+  .scard .links a:hover{text-decoration:underline}
+  .scard .s-foot{padding:10px 14px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .scard .btn{font-size:11px;padding:6px 11px}
+
+  /* mini specimens */
+  .spx-editorial-minimalism{background:#FAFAF9;color:#18181B}
+  .spx-editorial-minimalism .t{font-weight:600;font-size:20px;letter-spacing:-.02em}
+  .spx-editorial-minimalism .s{color:#8A8A93;font-size:11px;margin-top:4px}
+  .spx-editorial-minimalism .b{display:inline-block;background:#18181B;color:#FAFAF9;font-size:10px;font-weight:600;padding:5px 10px;border-radius:5px;margin-top:12px}
+  .spx-warm-editorial{background:#F7F3EC;color:#2E2B26}
+  .spx-warm-editorial .t{font-family:Georgia,serif;font-size:21px}
+  .spx-warm-editorial .s{font-family:Georgia,serif;color:#8A8171;font-size:12px;margin-top:4px}
+  .spx-warm-editorial .b{display:inline-block;background:#C15F3C;color:#F7F3EC;font-size:10.5px;padding:5px 13px;border-radius:99px;margin-top:10px}
+  .spx-terminal-core{background:#0B0F0C;color:#7BCF92;font-family:Consolas,monospace}
+  .spx-terminal-core .t{color:#39FF6E;font-size:15px}
+  .spx-terminal-core .s{font-size:11px;margin-top:6px}
+  .spx-terminal-core .cur{display:inline-block;width:7px;height:12px;background:#39FF6E;vertical-align:middle;animation:tvblink 1.1s steps(1) infinite}
+  @keyframes tvblink{50%{opacity:0}}
+  @media(prefers-reduced-motion:reduce){.spx-terminal-core .cur{animation:none}}
+  .spx-swiss-international{background:#FFF;color:#0A0A0A;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
+  .spx-swiss-international .t{font-size:26px;font-weight:700;letter-spacing:-.04em;line-height:.95;text-transform:lowercase}
+  .spx-swiss-international .red{color:#E30613}
+  .spx-swiss-international .rule{height:3px;background:#0A0A0A;margin-top:12px;width:70%}
+  .spx-brutalist-raw{background:#FFF;color:#000;font-family:'Times New Roman',serif}
+  .spx-brutalist-raw .t{font-size:17px;font-weight:700;text-decoration:underline}
+  .spx-brutalist-raw .s{font-size:12px;margin-top:6px}
+  .spx-brutalist-raw a{color:#0000EE}
+  .spx-neo-brutalism{background:#FFD02F;color:#000}
+  .spx-neo-brutalism .t{font-family:'Arial Black',Arial,sans-serif;font-size:17px;text-transform:uppercase}
+  .spx-neo-brutalism .card-n{background:#FFF;border:2.5px solid #000;box-shadow:5px 5px 0 #000;padding:7px 10px;margin-top:10px;font-size:10.5px;font-weight:700;display:inline-block}
+  .spx-neon-brutalist{background:#0A0A0A;color:#F5F5F5}
+  .spx-neon-brutalist .tag{display:inline-block;background:#FF2D95;color:#0A0A0A;font-weight:800;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:2px 7px}
+  .spx-neon-brutalist .t{font-size:19px;font-weight:800;text-transform:uppercase;line-height:1.02;margin-top:8px}
+  .spx-neon-brutalist .t em{font-family:Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#FF2D95}
+  .spx-data-dense-pro{background:#0E1116;color:#D7DCE3}
+  .spx-data-dense-pro .lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#7A8494}
+  .spx-data-dense-pro .val{font-family:Consolas,monospace;font-size:17px;margin-top:2px}
+  .spx-data-dense-pro .up{color:#3DDC84;font-size:11px}
+  .spx-cinematic-dark{background:radial-gradient(120% 100% at 70% 0%,#1A1A24 0%,#060608 65%);color:#EDEDF0;text-align:center}
+  .spx-cinematic-dark .o{font-size:8.5px;letter-spacing:.4em;text-transform:uppercase;color:#8A8A97;margin-top:8px}
+  .spx-cinematic-dark .t{font-weight:200;font-size:25px;letter-spacing:.02em;margin-top:6px}
+  .spx-glass-soft-futurism{background:linear-gradient(135deg,#C7D8F5,#E4D5F0 50%,#F3D9DC)}
+  .spx-glass-soft-futurism .g{background:rgba(255,255,255,.45);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:14px;padding:12px 16px;color:#1C1C26;display:inline-block;margin-top:14px}
+  .spx-glass-soft-futurism .t{font-size:16px;font-weight:600}
+  .spx-glass-soft-futurism .s{font-size:10.5px;color:#4A4A5C}
+  .spx-playful-color{background:#FFF;color:#232336;position:relative}
+  .spx-playful-color .bl{position:absolute;border-radius:50%}
+  .spx-playful-color .b1{width:70px;height:70px;background:#FFC93C;top:-18px;right:14px}
+  .spx-playful-color .b2{width:40px;height:40px;background:#4CD4B0;bottom:-8px;right:96px}
+  .spx-playful-color .t{font-size:19px;font-weight:800;position:relative}
+  .spx-playful-color .t em{font-style:normal;color:#7A5CF0}
+  .spx-playful-color .b{display:inline-block;background:#7A5CF0;color:#FFF;font-weight:700;font-size:10.5px;padding:7px 14px;border-radius:99px;box-shadow:0 4px 0 #5A3ED0;margin-top:12px;position:relative}
+  .spx-magazine-print{background:#FCFBF8;color:#141412;font-family:Georgia,'Times New Roman',serif}
+  .spx-magazine-print .mh{text-align:center;border-bottom:2px double #141412;padding-bottom:5px;font-size:15px;letter-spacing:.06em;font-weight:700;text-transform:uppercase}
+  .spx-magazine-print .cols{column-count:2;column-gap:14px;column-rule:1px solid #DDDCD2;font-size:9.5px;line-height:1.45;text-align:justify;margin-top:8px}
+  .spx-magazine-print .cols p::first-letter{font-size:20px;float:left;line-height:.9;padding-right:3px;font-weight:700}
 </style>
 </head>
 <body>
@@ -136,6 +207,7 @@
 
   <nav class="tabs" id="tabs" aria-label="Collections"></nav>
   <section id="panels"></section>
+  <div class="styles-intro" id="stylesIntro"></div>
   <main class="grid" id="grid"></main>
 
   <footer>
@@ -164,10 +236,28 @@
 </dialog>
 
 <script>
-let DATA=null, active='all';
+let DATA=null, STYLES=null, active='all';
+
+const SPECIMENS = {
+  "editorial-minimalism": `<div class="t">Issue tracking for teams that ship.</div><div class="s">Fast, keyboard-first, and quiet about it.</div><span class="b">Start building</span>`,
+  "warm-editorial": `<div class="t">Software should feel like a good book.</div><div class="s">Built slowly, on purpose.</div><span class="b">Begin reading</span>`,
+  "terminal-core": `<div class="t">$ vaultctl deploy --edge</div><div class="s">→ built in 412ms · 0 warnings</div><div class="s">→ live in 14 regions <span class="cur"></span></div>`,
+  "swiss-international": `<div class="t">form follows<br><span class="red">function.</span></div><div class="rule"></div>`,
+  "brutalist-raw": `<div class="t">INDEX OF /PROJECTS</div><div class="s">Loads in 40ms. Outlives your framework.<br><a href="#">projects.html</a> · <a href="#">now.html</a></div>`,
+  "neo-brutalism": `<div class="t">Ship loud.</div><div class="card-n">Shadows COMMIT here.</div>`,
+  "neon-brutalist": `<span class="tag">Review</span><div class="t">The album of the year <em>is a spreadsheet.</em></div>`,
+  "data-dense-pro": `<div class="lbl">Requests</div><div class="val">184.2k <span class="up">▲2.4%</span></div><div class="lbl" style="margin-top:8px">p99</div><div class="val">218ms</div>`,
+  "cinematic-dark": `<div class="o">A new kind of engine</div><div class="t">Render reality.</div>`,
+  "glass-soft-futurism": `<div class="g"><div class="t">Ambient by design.</div><div class="s">Interface as frosted architecture.</div></div>`,
+  "playful-color": `<span class="bl b1"></span><span class="bl b2"></span><div class="t">Learning that feels like <em>playing.</em></div><span class="b">Start your streak</span>`,
+  "magazine-print": `<div class="mh">The Ledger</div><div class="cols"><p>When the interface borrows the newspaper's clothes, it borrows its credibility. Columns imply editing; a masthead implies an institution worth trusting.</p></div>`
+};
 
 async function boot(){
   DATA = await (await fetch('data/gallery.json')).json();
+  STYLES = await (await fetch('data/styles.json')).json();
+  const h = location.hash.slice(1);
+  if(h && (h==='all'||h==='styles'||DATA.collections.some(c=>c.id===h))) active=h;
   document.getElementById('dnaConstants').innerHTML = DATA.dna.constants.map(c=>`<li>${c}</li>`).join('');
   document.getElementById('dnaNever').innerHTML = DATA.dna.never.map(c=>`<li>${c}</li>`).join('');
   document.getElementById('coordCount').textContent = `${DATA.entries.length} ENTRIES · ${DATA.collections.length} COLLECTIONS`;
@@ -179,8 +269,9 @@ function renderTabs(){
   const t = document.getElementById('tabs');
   const mk=(id,label,n)=>`<button class="tab${active===id?' active':''}" data-id="${id}">${label} <span class="n">${n}</span></button>`;
   t.innerHTML = mk('all','ALL',DATA.entries.length) + DATA.collections.map(c=>
-    mk(c.id, c.name.toUpperCase(), DATA.entries.filter(e=>e.collection===c.id).length)).join('');
-  t.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{active=b.dataset.id;renderTabs();renderPanels();renderGrid();});
+    mk(c.id, c.name.toUpperCase(), DATA.entries.filter(e=>e.collection===c.id).length)).join('')
+    + mk('styles','◈ REFERENCE STYLES',STYLES.styles.length);
+  t.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{active=b.dataset.id;history.replaceState(null,'','#'+active);renderTabs();renderPanels();renderGrid();});
 }
 
 function renderPanels(){
@@ -204,6 +295,29 @@ function renderPanels(){
 
 function renderGrid(){
   const g = document.getElementById('grid');
+  const intro = document.getElementById('stylesIntro');
+  if(active==='styles'){
+    intro.classList.add('show');
+    intro.textContent = STYLES.description;
+    g.innerHTML = STYLES.styles.map(s=>`
+      <article class="scard">
+        <div class="spx spx-${s.id}">${SPECIMENS[s.id]||''}</div>
+        <div class="s-body">
+          <h3>${s.name}</h3>
+          ${s.warning?`<div class="warn">⚠ ${s.warning}</div>`:''}
+          <ul class="rec">${s.recognize.map(r=>`<li>${r}</li>`).join('')}</ul>
+          <div class="chips">${s.vocabulary.map(v=>`<span class="chip">${v}</span>`).join('')}</div>
+        </div>
+        <div class="links">${s.canonical.map(c=>`<a href="${c.url}" target="_blank" rel="noopener">${c.name}</a>`).join('')}</div>
+        <div class="s-foot">
+          <button class="btn" onclick="copyStyleBrief('${s.id}')">COPY BRIEF</button>
+          <button class="btn ghost" onclick="copyStyleVocab('${s.id}')">VOCAB</button>
+          <span class="copymsg" id="smsg-${s.id}">copied →</span>
+        </div>
+      </article>`).join('');
+    return;
+  }
+  intro.classList.remove('show');
   const list = DATA.entries.filter(e=>active==='all'||e.collection===active);
   g.innerHTML = list.map((e,i)=>{
     const col = DATA.collections.find(c=>c.id===e.collection);
@@ -236,6 +350,20 @@ Everything else: your call. Surprise me.`;
 }
 
 function flash(id){const m=document.getElementById(id);m.classList.add('show');setTimeout(()=>m.classList.remove('show'),1800);}
+function styleBriefFor(id){
+  const s = STYLES.styles.find(x=>x.id===id);
+  return `Aesthetic: ${s.name.toLowerCase()}
+Vocabulary: ${s.vocabulary.join(', ')}
+Reference feel: ${s.canonical.map(c=>c.name).join(', ')}
+House DNA: ${DATA.dna.constants.map(x=>x.split(' - ')[0]).join('; ')}
+Never: ${DATA.dna.never.join(', ')}
+One risk: ${s.risk}${s.imageStyle?`
+Hero asset: generate before building - fill [SUBJECT] and send to Higgsfield gpt_image_2 at 2K:
+  "${s.imageStyle}"`:''}
+Everything else: your call. Surprise me.`;
+}
+function copyStyleBrief(id){navigator.clipboard.writeText(styleBriefFor(id));flash('smsg-'+id);}
+function copyStyleVocab(id){const s=STYLES.styles.find(x=>x.id===id);navigator.clipboard.writeText(s.vocabulary.join(', '));flash('smsg-'+id);}
 function copyBrief(id){navigator.clipboard.writeText(briefFor(id));flash('msg-'+id);}
 function copyVocab(id){const c=DATA.collections.find(x=>x.id===id);navigator.clipboard.writeText(c.vocabulary.join(', '));flash('msg-'+id);}
 
