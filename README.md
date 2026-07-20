@@ -23,8 +23,16 @@ Multiple paths accepted. Each image is copied to `images/`, run through `claude 
 ## Use in a project
 
 1. Open the gallery, pick the collection matching the project's soul
-2. **COPY BRIEF BLOCK** — assembles: collection vocabulary + reference entries + house DNA + never-list + one-risk suggestion
+2. **COPY BRIEF BLOCK** — assembles: collection vocabulary + reference entries + house DNA + never-list + one-risk + hero-asset instruction
 3. Paste at the top of your Claude Code prompt
+
+## Image recipes (hero assets)
+
+Claude can't paint the background — the hero image usually IS the aesthetic. Every entry carries an **imageRecipe**: an image-gen prompt with the style locked and the subject as a `[SUBJECT: ...]` slot.
+
+- Entry modal → **COPY IMAGE PROMPT** → replace `[SUBJECT]` with your product's subject → Higgsfield `gpt_image_2` at 2K → hand the asset to Claude Code alongside the brief
+- Collection brief blocks embed the collection-level `imageStyle` template as a "Hero asset" step
+- Ingest extracts a recipe from every new screenshot automatically
 
 ## Structure
 

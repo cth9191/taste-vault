@@ -106,6 +106,10 @@
   .m-fam{font-family:Consolas,monospace;font-size:12px;color:var(--muted)}
   .m-note{font-size:14px;color:var(--muted);margin:8px 0 12px;max-width:80ch}
   .m-vocab{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+  .m-recipe{border:1px dashed var(--line);background:var(--paper-deep);padding:12px 14px;margin-bottom:16px}
+  .m-recipe h4{font-family:Consolas,monospace;font-size:10.5px;letter-spacing:.14em;color:var(--ember);margin:0 0 8px;font-weight:400}
+  .m-recipe p{font-size:12.5px;margin:0;color:var(--ink);line-height:1.55}
+  .m-recipe p .slot{background:#F1DFAF;padding:0 3px}
   .m-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:14px}
 
   footer{border-top:2px solid var(--ink);margin-top:60px;padding-top:14px;display:flex;justify-content:space-between;font-family:Consolas,monospace;font-size:11px;color:var(--muted);flex-wrap:wrap;gap:6px}
@@ -146,8 +150,13 @@
     <div class="m-top"><h3 id="mTitle"></h3><span class="m-fam mono" id="mFam"></span></div>
     <p class="m-note" id="mNote"></p>
     <div class="m-vocab" id="mVocab"></div>
+    <div class="m-recipe" id="mRecipeWrap">
+      <h4>IMAGE RECIPE — fill [SUBJECT], send to Higgsfield gpt_image_2 @ 2K</h4>
+      <p class="mono" id="mRecipe"></p>
+    </div>
     <div class="m-actions">
       <button class="btn" id="mCopyVocab">COPY VOCABULARY</button>
+      <button class="btn" id="mCopyRecipe">COPY IMAGE PROMPT</button>
       <button class="btn ghost" id="mClose">CLOSE</button>
       <span class="copymsg" id="mMsg">copied →</span>
     </div>
@@ -221,6 +230,8 @@ Reference feel: ${refs}
 House DNA: ${DATA.dna.constants.map(s=>s.split(' - ')[0]).join('; ')}
 Never: ${DATA.dna.never.join(', ')}
 One risk: ${c.risk}
+Hero asset: generate before building - fill [SUBJECT] and send to Higgsfield gpt_image_2 at 2K:
+  "${c.imageStyle}"
 Everything else: your call. Surprise me.`;
 }
 
@@ -235,6 +246,13 @@ function openModal(id){
   document.getElementById('mFam').textContent=e.family;
   document.getElementById('mNote').textContent=e.note;
   document.getElementById('mVocab').innerHTML=e.vocabulary.map(v=>`<span class="chip">${v}</span>`).join('');
+  const wrap=document.getElementById('mRecipeWrap');
+  if(e.imageRecipe){
+    wrap.style.display='block';
+    document.getElementById('mRecipe').innerHTML=e.imageRecipe.replace(/\[SUBJECT[^\]]*\]/g,m=>`<span class="slot">${m}</span>`);
+    document.getElementById('mCopyRecipe').style.display='';
+    document.getElementById('mCopyRecipe').onclick=()=>{navigator.clipboard.writeText(e.imageRecipe);flash('mMsg');};
+  } else { wrap.style.display='none'; document.getElementById('mCopyRecipe').style.display='none'; }
   document.getElementById('mCopyVocab').onclick=()=>{navigator.clipboard.writeText(e.vocabulary.join(', '));flash('mMsg');};
   document.getElementById('modal').showModal();
 }

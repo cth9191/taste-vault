@@ -40,10 +40,11 @@ You are an expert UI designer cataloging a personal taste gallery. Analyze this 
   "family": "aesthetic family, e.g. 'warm editorial x print DNA'",
   "vocabulary": ["5-8 objective design-vocabulary terms an expert would use: texture treatments, type moves, color logic, layout devices, marginalia"],
   "note": "one sentence: the single most stealable idea in this design",
+  "imageRecipe": "an image-generation prompt that would recreate this design's hero/background image STYLE with the subject swapped out: describe treatment, texture, palette, lighting, composition and negative space precisely, and write the subject as a bracketed slot like [SUBJECT: original subject here]. If the design has no meaningful hero image, use null.",
   "collection": "<one of: ${collectionsSummary} | or 'NEW'>",
-  "newCollection": { "id": "kebab-id", "name": "Name", "description": "...", "deployFor": "...", "vocabulary": ["..."], "risk": "one bold move suggestion", "accent": "#hex" }
+  "newCollection": { "id": "kebab-id", "name": "Name", "description": "...", "deployFor": "...", "vocabulary": ["..."], "risk": "one bold move suggestion", "accent": "#hex", "imageStyle": "generalized [SUBJECT] image-style template for this collection" }
 }
-Rules: vocabulary must be objective and promptable (usable in a design brief), not opinions. Only use "NEW" + newCollection if the screenshot genuinely fits none of the existing collections. Return raw JSON only.`;
+Rules: vocabulary must be objective and promptable (usable in a design brief), not opinions. The imageRecipe must be usable directly in an image generator (Higgsfield gpt_image_2) - style locked, subject swappable. Only use "NEW" + newCollection if the screenshot genuinely fits none of the existing collections. Return raw JSON only.`;
 
   const out = execFileSync("claude", ["-p", prompt, "--output-format", "text"], {
     encoding: "utf8",
@@ -101,6 +102,7 @@ for (const src of args) {
     vocabulary: result.vocabulary,
     note: result.note,
     added: today,
+    ...(result.imageRecipe ? { imageRecipe: result.imageRecipe } : {}),
   });
   console.log(`  ✓ ${result.title} → ${collectionId} [${result.vocabulary.length} terms]`);
 }
