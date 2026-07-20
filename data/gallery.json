@@ -31,7 +31,15 @@
       "name": "Print-Tech Paper",
       "description": "Crafted-document energy: warm paper grounds, halftone/CMYK texture, registration marks, mono data callouts. The page pretends it was printed and measured.",
       "deployFor": "Product sites that should feel crafted, considered, human - tools with a soul.",
-      "vocabulary": ["halftone texture", "warm paper ground", "registration marks", "mono data callouts", "dashed grid rules", "single ember accent word", "archival imagery"],
+      "vocabulary": [
+        "halftone texture",
+        "warm paper ground",
+        "registration marks",
+        "mono data callouts",
+        "dashed grid rules",
+        "single ember accent word",
+        "archival imagery"
+      ],
       "risk": "Render the hero image entirely in halftone dots with visible registration marks",
       "accent": "#C15F3C",
       "imageStyle": "[SUBJECT] rendered as a vintage halftone CMYK print: coarse visible dot grid, slight chromatic misregistration, warm cream paper ground, muted palette with one orange accent, generous soft-sky negative space for headline, flat print finish, no gloss"
@@ -41,7 +49,15 @@
       "name": "Dither Mono",
       "description": "Stark black-and-white with bitmap/dither texture. Serif display carrying full authority. Split-screen form-plus-art layouts. Grain everywhere.",
       "deployFor": "Portfolios, agencies, waitlists - anywhere restraint reads as confidence.",
-      "vocabulary": ["bitmap dither", "stark B&W", "film grain", "serif display", "split-screen form + art", "giant cropped wordmark", "high contrast"],
+      "vocabulary": [
+        "bitmap dither",
+        "stark B&W",
+        "film grain",
+        "serif display",
+        "split-screen form + art",
+        "giant cropped wordmark",
+        "high contrast"
+      ],
       "risk": "Dither the entire hero image to 1-bit and let a cropped wordmark run off the viewport",
       "accent": "#141414",
       "imageStyle": "[SUBJECT] as a stark black-and-white image with heavy 1-bit bitmap dither / coarse film grain, high contrast, dramatic single light source, dark studio or void background, no color, no midtone smoothness - texture must read as deliberate machine processing"
@@ -51,7 +67,15 @@
       "name": "Vast Quiet Cinematic",
       "description": "One enormous atmospheric landscape - mist, fog, dusk grade - with tiny restrained type floating in it. Silence as scale.",
       "deployFor": "Enterprise trust, frontier-company gravitas, serious AI/infra brands.",
-      "vocabulary": ["monumental landscape photography", "mist and fog atmosphere", "dusk color grade", "tiny centered sans", "extreme negative space", "two-tone headline", "quiet CTA"],
+      "vocabulary": [
+        "monumental landscape photography",
+        "mist and fog atmosphere",
+        "dusk color grade",
+        "tiny centered sans",
+        "extreme negative space",
+        "two-tone headline",
+        "quiet CTA"
+      ],
       "risk": "Let the landscape occupy 90% of the viewport and shrink the headline to whisper size",
       "accent": "#2E4A46",
       "imageStyle": "vast aerial photograph of [SUBJECT], heavy mist and fog atmosphere, desaturated cinematic color grade (pale fog whites or deep teal dusk), upper half dissolving into pale featureless sky for headline space, epic scale, no people, matte photographic finish"
@@ -61,7 +85,15 @@
       "name": "Data-as-Texture",
       "description": "Imagery literally rendered from the machine's alphabet - ASCII clouds, binary skies, monochrome 3D worlds. The product's data made visible.",
       "deployFor": "AI and technical products that deserve spectacle without stock-3D slop.",
-      "vocabulary": ["ASCII-rendered imagery", "binary texture", "data-as-material", "decrypt/scramble text", "monochrome 3D world", "mono labels", "amber-on-dark"],
+      "vocabulary": [
+        "ASCII-rendered imagery",
+        "binary texture",
+        "data-as-material",
+        "decrypt/scramble text",
+        "monochrome 3D world",
+        "mono labels",
+        "amber-on-dark"
+      ],
       "risk": "Rebuild the hero photo out of the product's own log output or characters",
       "accent": "#D9A441",
       "imageStyle": "[SUBJECT] constructed entirely from tiny monospace characters (binary digits, ASCII glyphs) varying in density to form the image, characters in amber or blue on a dark teal or white ground, photographic composition but data-native material, crisp legible glyphs up close"
@@ -71,7 +103,15 @@
       "name": "Classical Remix",
       "description": "Renaissance painting and classical sculpture colliding with soft modern UI. Serif italic emphasis. Gold details. Timeless gravitas humanizing new tech.",
       "deployFor": "Heavy or intimidating domains - legal, finance, psychology - that need warmth and weight at once.",
-      "vocabulary": ["classical painting imagery", "serif italic emphasis word", "soft sky palette", "gold accents", "canvas grain", "orbit-line overlay", "rounded glass input"],
+      "vocabulary": [
+        "classical painting imagery",
+        "serif italic emphasis word",
+        "soft sky palette",
+        "gold accents",
+        "canvas grain",
+        "orbit-line overlay",
+        "rounded glass input"
+      ],
       "risk": "Put a 500-year-old artwork behind a chat input and let them share the frame",
       "accent": "#8C6A3F",
       "imageStyle": "[SUBJECT] painted as a Renaissance / Baroque oil painting: allegorical figure or classical scene, soft sky-blue ground with rolling clouds, warm flesh tones and gold accents, flowing drapery, visible canvas grain, museum-grade composition with clear negative space on one side"
@@ -81,7 +121,15 @@
       "name": "Glitched Antiquity",
       "description": "Classical artwork corrupted by the machine: engraved angels and statues under glyph rain, datamosh streaks, chromatic glitch. Dark grounds, serif or dot-matrix display. Five centuries of gravitas, one pass through the shredder.",
       "deployFor": "Crypto/fintech, nightlife, culture brands wanting old-world weight with digital menace.",
-      "vocabulary": ["classical engraving or statue", "glyph rain overlay", "datamosh glitch streaks", "near-black ground", "dot-matrix display type", "serif on dark", "single hot accent"],
+      "vocabulary": [
+        "classical engraving or statue",
+        "glyph rain overlay",
+        "datamosh glitch streaks",
+        "near-black ground",
+        "dot-matrix display type",
+        "serif on dark",
+        "single hot accent"
+      ],
       "risk": "Visibly corrupt the masterpiece - let glitch eat the artwork's edge",
       "accent": "#D8432F",
       "imageStyle": "[SUBJECT] as a classical statue or vintage engraving being corrupted by digital glitch: cascading ASCII/numeral glyph rain, datamosh smears, chromatic aberration at the edges, near-black ground with one saturated accent color, dramatic single light"
@@ -91,68 +139,536 @@
       "name": "Illustrated Storybook",
       "description": "Painterly illustrated worlds with chunky display type or type-masking. Warm, humane, a little wondrous - consumer without being childish.",
       "deployFor": "Consumer products selling warmth, curiosity, delight.",
-      "vocabulary": ["painterly illustration", "chunky display wordmark", "type-masked imagery", "storybook scene", "saturated but graded palette", "split illustration panel"],
+      "vocabulary": [
+        "painterly illustration",
+        "chunky display wordmark",
+        "type-masked imagery",
+        "storybook scene",
+        "saturated but graded palette",
+        "split illustration panel"
+      ],
       "risk": "Mask the entire brand wordmark over the illustrated scene so letters become windows",
       "accent": "#2F5233",
       "imageStyle": "[SUBJECT] as a painterly storybook illustration: gouache/animation-background style, saturated but cohesively graded palette, soft painted light, wondrous but not childish, cinematic composition with a clear zone of calm sky or water for type"
     }
   ],
   "entries": [
-    { "id": "stillpage", "file": "stillpage.png", "title": "Stillpage", "collection": "print-tech-paper", "family": "warm editorial x print DNA", "vocabulary": ["halftone CMYK dot texture", "warm paper ground", "mono coordinate labels", "dashed grid rules", "single orange accent word", "lone-tree halftone imagery", "pill nav"], "note": "The template for the whole collection - paper, coordinates, one ember word.", "added": "2026-07-20",
-      "imageRecipe": "a lone [SUBJECT: tree with autumn foliage] on a grassy hill, rendered as a vintage halftone CMYK print with coarse visible dot grid and chromatic misregistration in greens/oranges/magentas, warm cream paper sky occupying the upper two-thirds as negative space, flat vintage print finish, subtle paper grain" },
-    { "id": "spade", "file": "spade.png", "title": "SPADE", "collection": "print-tech-paper", "family": "print-tech x data", "vocabulary": ["pale sage ground", "topographic line illustration", "mono data callouts", "transaction-ID chips", "film-strip ticks", "grotesk display"], "note": "Data marginalia as decoration that encodes truth - transaction ID, coordinates.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: an arrowhead-shaped stone] illustrated purely with fine topographic contour lines, single dark-green ink on pale sage-green paper, engraving-like line density describing 3D form, generous empty paper around it, technical-drawing precision, no shading fills" },
-    { "id": "sails-collage", "file": "sails-collage.png", "title": "Halftone Sails Collage", "collection": "print-tech-paper", "family": "print DNA collage", "vocabulary": ["halftone dot fields", "cream and black blocks", "archival sailing photography", "ruler ticks", "crop marks", "compass overlay"], "note": "Pure print-craft collage - the texture IS the composition.", "added": "2026-07-20",
-      "imageRecipe": "archival photograph of [SUBJECT: schooner sails against sky] arranged as a print collage: photo panels alternating with fields of pure halftone dots in cream and near-black, hard rectangular blocks, muted sepia-slate palette, thin compass/geometry line overlay on the photo, vintage newspaper reproduction quality" },
-    { "id": "monolith", "file": "monolith.png", "title": "MONOLITH", "collection": "dither-mono", "family": "brutalist-editorial B&W", "vocabulary": ["dithered Parthenon imagery", "giant cropped footer wordmark", "stark studio dark", "clean sans body", "high contrast"], "note": "Classical subject + machine dither + wordmark running off canvas.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: Parthenon-style classical temple facade] emerging from darkness, rendered in heavy black-and-white bitmap dither, dramatic side light raking across columns, right side of frame lit / left dissolving to pure black, monumental low-angle composition, machine-processed texture" },
-    { "id": "castle", "file": "castle.png", "title": "Castle", "collection": "dither-mono", "family": "print-tech waitlist", "vocabulary": ["1-bit bitmap castle illustration", "huge serif display", "stark two-field layout", "black CTA block"], "note": "Waitlist reduced to essentials; dither carries all the personality.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: medieval stone castle tower] as a 1-bit bitmap illustration, pure black pixels on white, coarse ordered-dither shading, chunky pixel-art edges at high resolution, isolated on white with hard silhouette, woodcut-meets-Macintosh energy" },
-    { "id": "asterisk-login", "file": "asterisk-login.png", "title": "Asterisk Login", "collection": "dither-mono", "family": "editorial B&W split", "vocabulary": ["split-screen form + art", "grainy inverted B&W photo", "serif display", "asterisk glyph mark", "stark white panel"], "note": "Login as editorial spread - form left, art right.", "added": "2026-07-20",
-      "imageRecipe": "grainy black-and-white photograph of [SUBJECT: a person seated beneath a large tree], tonally inverted/solarized so foliage glows white against black sky, heavy film grain and noise, surreal negative-image mood, single human figure small in frame" },
-    { "id": "dark-login-rock", "file": "dark-login-rock.png", "title": "Dark Login (Floating Rock)", "collection": "dither-mono", "family": "cinematic B&W split", "vocabulary": ["grainy surreal B&W photography", "floating monolith imagery", "serif welcome display", "charcoal form panel", "split-screen"], "note": "Same split pattern, dark variant - surreal photo does the talking.", "added": "2026-07-20",
-      "imageRecipe": "surreal black-and-white photograph: a massive [SUBJECT: inverted pyramid boulder] floating above a small human figure standing on a rock, heavy film grain, glowing white foliage spilling down dark cliff behind, single soft key light, dreamlike gravity-defying stillness" },
-    { "id": "ctgt-hero", "file": "ctgt-hero.png", "title": "CTGT (hero)", "collection": "vast-quiet-cinematic", "family": "editorial minimalism x cinematic", "vocabulary": ["vast B&W mountain photography", "mist atmosphere", "tiny centered sans", "extreme whitespace", "logo as anchor"], "note": "Maximum image, minimum words. Scale = authority.", "added": "2026-07-20",
-      "imageRecipe": "vast aerial photograph of [SUBJECT: a jagged mountain ridge] in desaturated slate tones, surrounding peaks fading into pale mist, upper half of frame pure fog-white sky for headline space, epic quiet scale, no people, matte cinematic grade" },
-    { "id": "ctgt-alt", "file": "ctgt-alt.png", "title": "CTGT (alt hero)", "collection": "vast-quiet-cinematic", "family": "editorial minimalism", "vocabulary": ["two-tone headline black-to-gray", "fog gradient", "small black CTA block", "left-aligned column", "green-graded crags"], "note": "Two-tone headline trick - emphasis via color weight, not size.", "added": "2026-07-20",
-      "imageRecipe": "moody photograph of [SUBJECT: sharp green mountain crags] with fog pouring over ridgelines, deep green-slate grade, left third of frame dissolving to soft white fog for text column, bottom fading to near-black, alpine gravitas" },
-    { "id": "nexora", "file": "nexora.png", "title": "Nexora", "collection": "vast-quiet-cinematic", "family": "cinematic landscape", "vocabulary": ["teal-graded coastal photography", "ember sunset accent", "clean white sans", "scroll cue marginalia", "footer feature ticker"], "note": "Color grade IS the brand - teal world, one ember horizon.", "added": "2026-07-20",
-      "imageRecipe": "cinematic photograph of [SUBJECT: coastal cliffs meeting the sea] at dusk, entire scene graded deep teal, single ember-red sun glow at the horizon line, field of dark wildflowers with red blooms in foreground, lone distant silhouette optional, heavy atmospheric haze, matte film finish" },
-    { "id": "prompting-company", "file": "prompting-company.png", "title": "The Prompting Company", "collection": "vast-quiet-cinematic", "family": "soft editorial serif", "vocabulary": ["SF fog photography", "centered serif display", "airy pastel sky", "pill CTAs", "small-caps masthead"], "note": "Soft variant - serif + fog instead of sans + crag.", "added": "2026-07-20",
-      "imageRecipe": "soft photograph of [SUBJECT: suspension bridge towers] emerging from a sea of fog, airy pastel blue-pink sky occupying upper two-thirds, warm rust-red structure as the only saturated element, gentle morning light, serene monumental calm" },
-    { "id": "climora", "file": "climora.png", "title": "Climora", "collection": "data-as-texture", "family": "cinematic data-texture", "vocabulary": ["clouds rendered from amber binary characters", "dark teal sky", "data-as-material", "golden accent CTAs", "star-rating chip"], "note": "The clouds ARE the data. Texture carries the product story.", "added": "2026-07-20",
-      "imageRecipe": "towering cumulus [SUBJECT: clouds] at golden hour against a dark teal sky, cloud surfaces rendered from thousands of tiny amber monospace binary digits (0s and 1s) varying in density with the light, photographic composition, data-as-material texture readable up close, dark moody upper sky for headline" },
-    { "id": "ascii-web-section", "file": "ascii-web-section.png", "title": "ASCII Web Section", "collection": "data-as-texture", "family": "editorial x data-art", "vocabulary": ["blue ASCII-character illustrations", "white editorial ground", "serif headlines", "card grid with expand chips", "globe-as-characters"], "note": "Light-mode proof the trick works on white - ASCII as product art.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: a globe] illustrated entirely from small blue monospace characters on pure white, character density forming continents and shading, sparse and airy, technical-poetic, crisp legible glyphs, generous white margin" },
-    { "id": "igloo", "file": "igloo.png", "title": "IGLOO", "collection": "data-as-texture", "family": "cinematic dark x WebGL", "vocabulary": ["monochrome 3D ice world", "glowing translucent material", "decrypt scramble text", "mono labels", "single hero object"], "note": "WebGL variant - one lit object in a monochrome world.", "added": "2026-07-20",
-      "imageRecipe": "monochrome 3D render of [SUBJECT: an igloo of glowing ice blocks] on an endless snow plain, translucent blocks lit from within (cool white glow), overcast gray-blue palette, soft volumetric snow haze, distant dunes of snow, single hero object composition, photoreal CG finish" },
-    { "id": "juris", "file": "juris.png", "title": "Juris", "collection": "classical-remix", "family": "classical x soft-futurism", "vocabulary": ["Renaissance Lady Justice painting", "soft sky blue ground", "serif italic emphasis word", "rounded glass input", "gold scale details", "badge chip"], "note": "Legal AI humanized by 500-year-old visual authority.", "added": "2026-07-20",
-      "imageRecipe": "Renaissance oil painting of [SUBJECT: an allegorical robed figure holding golden scales and sword], standing among soft cumulus clouds on a cornflower-blue sky, warm flesh tones, flowing cream-and-coral drapery, gold accents, visible canvas texture, left half of sky kept clear for text" },
-    { "id": "break-the-pattern", "file": "break-the-pattern.png", "title": "Break the Pattern", "collection": "classical-remix", "family": "classical x grain", "vocabulary": ["Creation of Adam crop", "canvas grain texture", "serif + mono type mix", "orbit-line overlay", "dusty blue palette"], "note": "Sistine hands + orbit overlay - antiquity annotated like a diagram.", "added": "2026-07-20",
-      "imageRecipe": "tight crop of [SUBJECT: two Renaissance-painted hands reaching toward each other] in Michelangelo fresco style, dusty slate-blue sky ground, heavy canvas/linen grain over everything, thin white dashed orbit lines and a small node circle annotating the gap between fingertips, muted clouds below" },
-    { "id": "marble", "file": "marble.png", "title": "MARBLE", "collection": "illustrated-storybook", "family": "playful x cinematic illustration", "vocabulary": ["giant chunky wordmark masking sky", "storybook sea illustration", "serif subline", "red pill CTA", "type-as-window"], "note": "Wordmark letters become windows into the illustrated world.", "added": "2026-07-20",
-      "imageRecipe": "storybook illustration of [SUBJECT: a rocky island with a lighthouse] in a bright blue sea, towering cumulus clouds, a child in a red kayak paddling toward it, Ghibli-adjacent painted style, saturated blues with red accent, wide calm water foreground for UI elements" },
-    { "id": "vitra", "file": "vitra.png", "title": "Vitra", "collection": "illustrated-storybook", "family": "warm illustrated split", "vocabulary": ["painterly lush illustration", "deep green display sans", "split panel layout", "avatar social proof row", "warm florals"], "note": "Illustration panel right, calm type panel left - warmth without noise.", "added": "2026-07-20",
-      "imageRecipe": "painterly illustration of [SUBJECT: a person reading on a balcony] surrounded by lush tropical foliage and orange flowers, warm evening light on a pale apartment building behind, gouache animation-background style, saturated greens with coral accents, composed for a right-side vertical panel" },
-    { "id": "linq", "file": "linq.png", "title": "linq", "collection": "illustrated-storybook", "family": "cinematic illustrated dark", "vocabulary": ["painterly dusk landscape", "dimmed vignette", "centered phone UI", "highlight-boxed headline words", "muted city silhouette"], "note": "Storybook gone dark - painted world dimmed behind product UI.", "added": "2026-07-20",
-      "imageRecipe": "painterly dusk landscape of [SUBJECT: a park lake with a distant city skyline], heavy storm clouds with warm light breaks, muted greens and grays, entire scene dimmed 40% as if behind a dark veil, storybook detail in trees and water, calm melancholy mood" },
-    { "id": "nightlife-refined", "file": "nightlife-refined.png", "title": "Nightlife, Refined", "collection": "glitched-antiquity", "family": "classical x data noir", "vocabulary": ["green classical statue holding cocktail", "deep red-black ground", "dot-matrix display type", "glyph rain overlay on figure", "pill CTAs", "avatar rating chip"], "note": "Dot-matrix headline + glyph-dusted statue - antiquity wired into a nightclub.", "added": "2026-07-20",
-      "imageRecipe": "a weathered [SUBJECT: classical marble statue with verdigris patina holding a cocktail glass], dramatic deep-red and black nightclub lighting, cascading amber ASCII glyphs and numerals overlaying the figure like digital rain, near-black left half for text, moody cinematic key light" },
-    { "id": "yieldstream", "file": "yieldstream.png", "title": "YieldStream", "collection": "glitched-antiquity", "family": "engraving x glitch", "vocabulary": ["vintage engraved angel illustration", "datamosh glitch streaks", "terminal digit clusters", "serif display on near-black", "tiny planet renders", "ghost-button CTA"], "note": "Renaissance engraving datamoshed - the angel is literally streaming.", "added": "2026-07-20",
-      "imageRecipe": "vintage colored engraving of [SUBJECT: a winged angel in motion], hand-etched linework and muted flesh tones, corrupted by horizontal datamosh glitch streaks and scattered terminal digit clusters, near-black ground, small holographic planets floating below, chromatic aberration on the wing edges" },
-    { "id": "cogni", "file": "cogni.png", "title": "Cogni", "collection": "vast-quiet-cinematic", "family": "cinematic light abstraction", "vocabulary": ["long-exposure light streak photography", "green-to-blue gradient trails", "dark botanical ground", "serif italic emphasis words", "cream pill CTA", "centered column"], "note": "Landscape swapped for pure light - atmosphere without geography.", "added": "2026-07-20",
-      "imageRecipe": "long-exposure photograph of [SUBJECT: sweeping light trails] flowing diagonally across a near-black ground, luminous green-to-cyan gradient streaks with soft bloom, deep shadow upper half for headline, elegant motion energy, no objects, cinematic contrast" },
-    { "id": "visora", "file": "visora.png", "title": "Visora", "collection": "vast-quiet-cinematic", "family": "editorial minimal desert", "vocabulary": ["cream desert dunescape", "lone walking silhouette", "giant near-black sans headline", "vast empty sky", "flat gray CTA block", "footer social row"], "note": "One figure, one dune, one headline - scale does everything.", "added": "2026-07-20",
-      "imageRecipe": "minimal photograph of [SUBJECT: a lone figure walking along a desert dune ridge] at dusk, vast cream-white empty sky filling the top 70% for typography, dune shadows in deep brown-black, tiny human scale against emptiness, warm muted grade, meditative stillness" },
-    { "id": "stillness-voxel", "file": "stillness-voxel.png", "title": "Stillness", "collection": "data-as-texture", "family": "editorial x voxel 3D", "vocabulary": ["voxel-rendered landscape", "pixel mountains and river", "serif headline with green emphasis", "clean white ground", "muted blue-coral-green palette", "soft product buttons"], "note": "The meditation landscape is built from blocks - digital material, calm subject.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: a serene mountain landscape with river and pine trees] built entirely from small 3D voxels, Minecraft-diorama style at high fidelity, STRICT muted palette: slate-blue and dusty navy with white snow, coral-salmon accent patches, sage-green foliage, no bright greens, no browns, soft even studio light, isolated diorama on a clean white ground with generous empty space above for typography" },
-    { "id": "roamfield", "file": "roamfield.png", "title": "Roamfield", "collection": "print-tech-paper", "family": "warm editorial x print DNA", "vocabulary": ["halftone landscape illustration", "autumn palette dots", "serif display headline", "floating pill nav", "black pill CTA", "cream sky ground"], "note": "Stillpage's trick at full bleed - the whole world is halftone.", "added": "2026-07-20",
-      "imageRecipe": "pastoral landscape of [SUBJECT: autumn trees along a winding river], rendered as a vintage halftone print with coarse visible CMYK dots, warm oranges and greens against a cream paper sky, dot density fading toward the top for text space, nostalgic postcard composition" },
-    { "id": "dualite", "file": "dualite.png", "title": "Dualite", "collection": "classical-remix", "family": "classical x white editorial", "vocabulary": ["grainy classical philosopher illustration", "serif italic emphasis word", "white ground with thin orbit lines", "blue pill CTA", "trust logo row", "warm red-blue drapery"], "note": "Light-mode antiquity - philosopher sells the product by reading.", "added": "2026-07-20",
-      "imageRecipe": "grainy vintage color illustration of [SUBJECT: a bearded philosopher in blue robe and red drapery reading a book], engraved-poster texture, isolated on a clean white ground with faint thin orbit lines behind, warm classical palette, right-side placement leaving left half empty for text" },
-    { "id": "journey-ascii-login", "file": "journey-ascii-login.png", "title": "Begin Your Journey", "collection": "data-as-texture", "family": "ASCII x split login", "vocabulary": ["full-bleed ASCII art panel", "grayscale character-density image", "techno display font", "split-screen form + art", "letterspaced CTA", "monochrome restraint"], "note": "The entire right half is one ASCII image - texture as the only decoration.", "added": "2026-07-20",
-      "imageRecipe": "[SUBJECT: a sailboat on calm water under a crescent moon] rendered entirely as grayscale ASCII art, thousands of monospace characters varying in density to form the image, black characters on white, crisp legible glyphs, full-bleed vertical panel composition" },
-    { "id": "sumi", "file": "sumi.png", "title": "SUMI", "collection": "dither-mono", "family": "ink-wash B&W editorial", "vocabulary": ["sumi-e ink wash landscape", "galaxy speckle within ink clouds", "tiny lone figure", "vast white ground", "mono status marginalia", "small caps nav"], "note": "Ink wash carries B&W without dither - galaxy inside the brushstroke.", "added": "2026-07-20",
-      "imageRecipe": "sumi-e ink wash painting of [SUBJECT: mountain ridges with pine trees] dissolving into a starry galaxy cloud, black ink gradients with white star speckle, tiny lone human silhouette below, vast empty white paper above and around, meditative negative space, single accent nowhere - pure monochrome" }
+    {
+      "id": "stillpage",
+      "file": "stillpage.png",
+      "title": "Stillpage",
+      "collection": "print-tech-paper",
+      "family": "warm editorial x print DNA",
+      "vocabulary": [
+        "halftone CMYK dot texture",
+        "warm paper ground",
+        "mono coordinate labels",
+        "dashed grid rules",
+        "single orange accent word",
+        "lone-tree halftone imagery",
+        "pill nav"
+      ],
+      "note": "The template for the whole collection - paper, coordinates, one ember word.",
+      "added": "2026-07-20",
+      "imageRecipe": "a lone [SUBJECT: tree with autumn foliage] on a grassy hill, rendered as a vintage halftone CMYK print with coarse visible dot grid and chromatic misregistration in greens/oranges/magentas, warm cream paper sky occupying the upper two-thirds as negative space, flat vintage print finish, subtle paper grain",
+      "heroUsage": "full-bleed page ground; halftone sky occupies the top two-thirds as the text zone; nav floats in a white pill over it"
+    },
+    {
+      "id": "spade",
+      "file": "spade.png",
+      "title": "SPADE",
+      "collection": "print-tech-paper",
+      "family": "print-tech x data",
+      "vocabulary": [
+        "pale sage ground",
+        "topographic line illustration",
+        "mono data callouts",
+        "transaction-ID chips",
+        "film-strip ticks",
+        "grotesk display"
+      ],
+      "note": "Data marginalia as decoration that encodes truth - transaction ID, coordinates.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: an arrowhead-shaped stone] illustrated purely with fine topographic contour lines, single dark-green ink on pale sage-green paper, engraving-like line density describing 3D form, generous empty paper around it, technical-drawing precision, no shading fills",
+      "heroUsage": "isolated illustration placed center-right within a pale sage page, surrounded by mono data-callout chips; page ground matches the paper color so it floats in the layout, not in a frame"
+    },
+    {
+      "id": "sails-collage",
+      "file": "sails-collage.png",
+      "title": "Halftone Sails Collage",
+      "collection": "print-tech-paper",
+      "family": "print DNA collage",
+      "vocabulary": [
+        "halftone dot fields",
+        "cream and black blocks",
+        "archival sailing photography",
+        "ruler ticks",
+        "crop marks",
+        "compass overlay"
+      ],
+      "note": "Pure print-craft collage - the texture IS the composition.",
+      "added": "2026-07-20",
+      "imageRecipe": "archival photograph of [SUBJECT: schooner sails against sky] arranged as a print collage: photo panels alternating with fields of pure halftone dots in cream and near-black, hard rectangular blocks, muted sepia-slate palette, thin compass/geometry line overlay on the photo, vintage newspaper reproduction quality",
+      "heroUsage": "the collage IS the page ground - full-bleed blocks; text sits on the cream fields between photo panels"
+    },
+    {
+      "id": "monolith",
+      "file": "monolith.png",
+      "title": "MONOLITH",
+      "collection": "dither-mono",
+      "family": "brutalist-editorial B&W",
+      "vocabulary": [
+        "dithered Parthenon imagery",
+        "giant cropped footer wordmark",
+        "stark studio dark",
+        "clean sans body",
+        "high contrast"
+      ],
+      "note": "Classical subject + machine dither + wordmark running off canvas.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: Parthenon-style classical temple facade] emerging from darkness, rendered in heavy black-and-white bitmap dither, dramatic side light raking across columns, right side of frame lit / left dissolving to pure black, monumental low-angle composition, machine-processed texture",
+      "heroUsage": "right-half hero against black; left half stays near-black as the headline column; giant wordmark overlaps the bottom edge"
+    },
+    {
+      "id": "castle",
+      "file": "castle.png",
+      "title": "Castle",
+      "collection": "dither-mono",
+      "family": "print-tech waitlist",
+      "vocabulary": [
+        "1-bit bitmap castle illustration",
+        "huge serif display",
+        "stark two-field layout",
+        "black CTA block"
+      ],
+      "note": "Waitlist reduced to essentials; dither carries all the personality.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: medieval stone castle tower] as a 1-bit bitmap illustration, pure black pixels on white, coarse ordered-dither shading, chunky pixel-art edges at high resolution, isolated on white with hard silhouette, woodcut-meets-Macintosh energy",
+      "heroUsage": "isolated illustration on the right half of a white page; form column left; the hard silhouette gives text clean air"
+    },
+    {
+      "id": "asterisk-login",
+      "file": "asterisk-login.png",
+      "title": "Asterisk Login",
+      "collection": "dither-mono",
+      "family": "editorial B&W split",
+      "vocabulary": [
+        "split-screen form + art",
+        "grainy inverted B&W photo",
+        "serif display",
+        "asterisk glyph mark",
+        "stark white panel"
+      ],
+      "note": "Login as editorial spread - form left, art right.",
+      "added": "2026-07-20",
+      "imageRecipe": "grainy black-and-white photograph of [SUBJECT: a person seated beneath a large tree], tonally inverted/solarized so foliage glows white against black sky, heavy film grain and noise, surreal negative-image mood, single human figure small in frame",
+      "heroUsage": "right panel of a split-screen login; left form panel is pure white; image cropped hard at the split"
+    },
+    {
+      "id": "dark-login-rock",
+      "file": "dark-login-rock.png",
+      "title": "Dark Login (Floating Rock)",
+      "collection": "dither-mono",
+      "family": "cinematic B&W split",
+      "vocabulary": [
+        "grainy surreal B&W photography",
+        "floating monolith imagery",
+        "serif welcome display",
+        "charcoal form panel",
+        "split-screen"
+      ],
+      "note": "Same split pattern, dark variant - surreal photo does the talking.",
+      "added": "2026-07-20",
+      "imageRecipe": "surreal black-and-white photograph: a massive [SUBJECT: inverted pyramid boulder] floating above a small human figure standing on a rock, heavy film grain, glowing white foliage spilling down dark cliff behind, single soft key light, dreamlike gravity-defying stillness",
+      "heroUsage": "right panel of a split-screen on charcoal; centered subject with vignette; form panel left"
+    },
+    {
+      "id": "ctgt-hero",
+      "file": "ctgt-hero.png",
+      "title": "CTGT (hero)",
+      "collection": "vast-quiet-cinematic",
+      "family": "editorial minimalism x cinematic",
+      "vocabulary": [
+        "vast B&W mountain photography",
+        "mist atmosphere",
+        "tiny centered sans",
+        "extreme whitespace",
+        "logo as anchor"
+      ],
+      "note": "Maximum image, minimum words. Scale = authority.",
+      "added": "2026-07-20",
+      "imageRecipe": "vast aerial photograph of [SUBJECT: a jagged mountain ridge] in desaturated slate tones, surrounding peaks fading into pale mist, upper half of frame pure fog-white sky for headline space, epic quiet scale, no people, matte cinematic grade",
+      "heroUsage": "full-bleed; fog-white upper half is the headline zone with tiny centered type; ridge fills the lower half"
+    },
+    {
+      "id": "ctgt-alt",
+      "file": "ctgt-alt.png",
+      "title": "CTGT (alt hero)",
+      "collection": "vast-quiet-cinematic",
+      "family": "editorial minimalism",
+      "vocabulary": [
+        "two-tone headline black-to-gray",
+        "fog gradient",
+        "small black CTA block",
+        "left-aligned column",
+        "green-graded crags"
+      ],
+      "note": "Two-tone headline trick - emphasis via color weight, not size.",
+      "added": "2026-07-20",
+      "imageRecipe": "moody photograph of [SUBJECT: sharp green mountain crags] with fog pouring over ridgelines, deep green-slate grade, left third of frame dissolving to soft white fog for text column, bottom fading to near-black, alpine gravitas",
+      "heroUsage": "full-bleed; left third dissolves to fog-white for the text column; image darkens toward the bottom"
+    },
+    {
+      "id": "nexora",
+      "file": "nexora.png",
+      "title": "Nexora",
+      "collection": "vast-quiet-cinematic",
+      "family": "cinematic landscape",
+      "vocabulary": [
+        "teal-graded coastal photography",
+        "ember sunset accent",
+        "clean white sans",
+        "scroll cue marginalia",
+        "footer feature ticker"
+      ],
+      "note": "Color grade IS the brand - teal world, one ember horizon.",
+      "added": "2026-07-20",
+      "imageRecipe": "cinematic photograph of [SUBJECT: coastal cliffs meeting the sea] at dusk, entire scene graded deep teal, single ember-red sun glow at the horizon line, field of dark wildflowers with red blooms in foreground, lone distant silhouette optional, heavy atmospheric haze, matte film finish",
+      "heroUsage": "full-bleed dusk scene; headline sits top-left on the darkened sky; feature ticker runs along the bottom"
+    },
+    {
+      "id": "prompting-company",
+      "file": "prompting-company.png",
+      "title": "The Prompting Company",
+      "collection": "vast-quiet-cinematic",
+      "family": "soft editorial serif",
+      "vocabulary": [
+        "SF fog photography",
+        "centered serif display",
+        "airy pastel sky",
+        "pill CTAs",
+        "small-caps masthead"
+      ],
+      "note": "Soft variant - serif + fog instead of sans + crag.",
+      "added": "2026-07-20",
+      "imageRecipe": "soft photograph of [SUBJECT: suspension bridge towers] emerging from a sea of fog, airy pastel blue-pink sky occupying upper two-thirds, warm rust-red structure as the only saturated element, gentle morning light, serene monumental calm",
+      "heroUsage": "full-bleed; pastel sky upper two-thirds carries a centered serif headline; subject rises from the bottom edge"
+    },
+    {
+      "id": "climora",
+      "file": "climora.png",
+      "title": "Climora",
+      "collection": "data-as-texture",
+      "family": "cinematic data-texture",
+      "vocabulary": [
+        "clouds rendered from amber binary characters",
+        "dark teal sky",
+        "data-as-material",
+        "golden accent CTAs",
+        "star-rating chip"
+      ],
+      "note": "The clouds ARE the data. Texture carries the product story.",
+      "added": "2026-07-20",
+      "imageRecipe": "towering cumulus [SUBJECT: clouds] at golden hour against a dark teal sky, cloud surfaces rendered from thousands of tiny amber monospace binary digits (0s and 1s) varying in density with the light, photographic composition, data-as-material texture readable up close, dark moody upper sky for headline",
+      "heroUsage": "full-bleed dark sky; headline left on the darkest area; data-clouds fill the lower right"
+    },
+    {
+      "id": "ascii-web-section",
+      "file": "ascii-web-section.png",
+      "title": "ASCII Web Section",
+      "collection": "data-as-texture",
+      "family": "editorial x data-art",
+      "vocabulary": [
+        "blue ASCII-character illustrations",
+        "white editorial ground",
+        "serif headlines",
+        "card grid with expand chips",
+        "globe-as-characters"
+      ],
+      "note": "Light-mode proof the trick works on white - ASCII as product art.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: a globe] illustrated entirely from small blue monospace characters on pure white, character density forming continents and shading, sparse and airy, technical-poetic, crisp legible glyphs, generous white margin",
+      "heroUsage": "inline illustration inside a white editorial card grid - NOT a background; the art floats beside copy at partial width"
+    },
+    {
+      "id": "igloo",
+      "file": "igloo.png",
+      "title": "IGLOO",
+      "collection": "data-as-texture",
+      "family": "cinematic dark x WebGL",
+      "vocabulary": [
+        "monochrome 3D ice world",
+        "glowing translucent material",
+        "decrypt scramble text",
+        "mono labels",
+        "single hero object"
+      ],
+      "note": "WebGL variant - one lit object in a monochrome world.",
+      "added": "2026-07-20",
+      "imageRecipe": "monochrome 3D render of [SUBJECT: an igloo of glowing ice blocks] on an endless snow plain, translucent blocks lit from within (cool white glow), overcast gray-blue palette, soft volumetric snow haze, distant dunes of snow, single hero object composition, photoreal CG finish",
+      "heroUsage": "full-bleed monochrome scene; single glowing object right-center; headline and mono labels sit top-left in the haze"
+    },
+    {
+      "id": "juris",
+      "file": "juris.png",
+      "title": "Juris",
+      "collection": "classical-remix",
+      "family": "classical x soft-futurism",
+      "vocabulary": [
+        "Renaissance Lady Justice painting",
+        "soft sky blue ground",
+        "serif italic emphasis word",
+        "rounded glass input",
+        "gold scale details",
+        "badge chip"
+      ],
+      "note": "Legal AI humanized by 500-year-old visual authority.",
+      "added": "2026-07-20",
+      "imageRecipe": "Renaissance oil painting of [SUBJECT: an allegorical robed figure holding golden scales and sword], standing among soft cumulus clouds on a cornflower-blue sky, warm flesh tones, flowing cream-and-coral drapery, gold accents, visible canvas texture, left half of sky kept clear for text",
+      "heroUsage": "right two-thirds of the hero; the painting's sky continues into the page background so the left text column sits on the same blue; input bar overlaps the bottom"
+    },
+    {
+      "id": "break-the-pattern",
+      "file": "break-the-pattern.png",
+      "title": "Break the Pattern",
+      "collection": "classical-remix",
+      "family": "classical x grain",
+      "vocabulary": [
+        "Creation of Adam crop",
+        "canvas grain texture",
+        "serif + mono type mix",
+        "orbit-line overlay",
+        "dusty blue palette"
+      ],
+      "note": "Sistine hands + orbit overlay - antiquity annotated like a diagram.",
+      "added": "2026-07-20",
+      "imageRecipe": "tight crop of [SUBJECT: two Renaissance-painted hands reaching toward each other] in Michelangelo fresco style, dusty slate-blue sky ground, heavy canvas/linen grain over everything, thin white dashed orbit lines and a small node circle annotating the gap between fingertips, muted clouds below",
+      "heroUsage": "full-bleed and slightly dimmed; centered serif headline sits directly on the canvas grain in the gap between the hands"
+    },
+    {
+      "id": "marble",
+      "file": "marble.png",
+      "title": "MARBLE",
+      "collection": "illustrated-storybook",
+      "family": "playful x cinematic illustration",
+      "vocabulary": [
+        "giant chunky wordmark masking sky",
+        "storybook sea illustration",
+        "serif subline",
+        "red pill CTA",
+        "type-as-window"
+      ],
+      "note": "Wordmark letters become windows into the illustrated world.",
+      "added": "2026-07-20",
+      "imageRecipe": "storybook illustration of [SUBJECT: a rocky island with a lighthouse] in a bright blue sea, towering cumulus clouds, a child in a red kayak paddling toward it, Ghibli-adjacent painted style, saturated blues with red accent, wide calm water foreground for UI elements",
+      "heroUsage": "full-bleed illustration; a giant wordmark masks into the sky; the calm water at the bottom holds form inputs"
+    },
+    {
+      "id": "vitra",
+      "file": "vitra.png",
+      "title": "Vitra",
+      "collection": "illustrated-storybook",
+      "family": "warm illustrated split",
+      "vocabulary": [
+        "painterly lush illustration",
+        "deep green display sans",
+        "split panel layout",
+        "avatar social proof row",
+        "warm florals"
+      ],
+      "note": "Illustration panel right, calm type panel left - warmth without noise.",
+      "added": "2026-07-20",
+      "imageRecipe": "painterly illustration of [SUBJECT: a person reading on a balcony] surrounded by lush tropical foliage and orange flowers, warm evening light on a pale apartment building behind, gouache animation-background style, saturated greens with coral accents, composed for a right-side vertical panel",
+      "heroUsage": "right vertical panel of a split layout; left panel is flat pale ground with text; illustration crops at the panel edge"
+    },
+    {
+      "id": "linq",
+      "file": "linq.png",
+      "title": "linq",
+      "collection": "illustrated-storybook",
+      "family": "cinematic illustrated dark",
+      "vocabulary": [
+        "painterly dusk landscape",
+        "dimmed vignette",
+        "centered phone UI",
+        "highlight-boxed headline words",
+        "muted city silhouette"
+      ],
+      "note": "Storybook gone dark - painted world dimmed behind product UI.",
+      "added": "2026-07-20",
+      "imageRecipe": "painterly dusk landscape of [SUBJECT: a park lake with a distant city skyline], heavy storm clouds with warm light breaks, muted greens and grays, entire scene dimmed 40% as if behind a dark veil, storybook detail in trees and water, calm melancholy mood",
+      "heroUsage": "full-bleed but dimmed ~40% behind a centered UI mockup; headline overlays the darkest lower zone"
+    },
+    {
+      "id": "nightlife-refined",
+      "file": "nightlife-refined.png",
+      "title": "Nightlife, Refined",
+      "collection": "glitched-antiquity",
+      "family": "classical x data noir",
+      "vocabulary": [
+        "green classical statue holding cocktail",
+        "deep red-black ground",
+        "dot-matrix display type",
+        "glyph rain overlay on figure",
+        "pill CTAs",
+        "avatar rating chip"
+      ],
+      "note": "Dot-matrix headline + glyph-dusted statue - antiquity wired into a nightclub.",
+      "added": "2026-07-20",
+      "imageRecipe": "a weathered [SUBJECT: classical marble statue with verdigris patina holding a cocktail glass], dramatic deep-red and black nightclub lighting, cascading amber ASCII glyphs and numerals overlaying the figure like digital rain, near-black left half for text, moody cinematic key light",
+      "heroUsage": "right-half figure against the red glow; left half falls to near-black for the headline; glyph rain bleeds toward center"
+    },
+    {
+      "id": "yieldstream",
+      "file": "yieldstream.png",
+      "title": "YieldStream",
+      "collection": "glitched-antiquity",
+      "family": "engraving x glitch",
+      "vocabulary": [
+        "vintage engraved angel illustration",
+        "datamosh glitch streaks",
+        "terminal digit clusters",
+        "serif display on near-black",
+        "tiny planet renders",
+        "ghost-button CTA"
+      ],
+      "note": "Renaissance engraving datamoshed - the angel is literally streaming.",
+      "added": "2026-07-20",
+      "imageRecipe": "vintage colored engraving of [SUBJECT: a winged angel in motion], hand-etched linework and muted flesh tones, corrupted by horizontal datamosh glitch streaks and scattered terminal digit clusters, near-black ground, small holographic planets floating below, chromatic aberration on the wing edges",
+      "heroUsage": "right-half figure on near-black; serif headline owns the left; glitch streaks may cross into the text zone sparingly"
+    },
+    {
+      "id": "cogni",
+      "file": "cogni.png",
+      "title": "Cogni",
+      "collection": "vast-quiet-cinematic",
+      "family": "cinematic light abstraction",
+      "vocabulary": [
+        "long-exposure light streak photography",
+        "green-to-blue gradient trails",
+        "dark botanical ground",
+        "serif italic emphasis words",
+        "cream pill CTA",
+        "centered column"
+      ],
+      "note": "Landscape swapped for pure light - atmosphere without geography.",
+      "added": "2026-07-20",
+      "imageRecipe": "long-exposure photograph of [SUBJECT: sweeping light trails] flowing diagonally across a near-black ground, luminous green-to-cyan gradient streaks with soft bloom, deep shadow upper half for headline, elegant motion energy, no objects, cinematic contrast",
+      "heroUsage": "full-bleed; light trails sweep the lower-left; upper half stays near-black for a centered headline"
+    },
+    {
+      "id": "visora",
+      "file": "visora.png",
+      "title": "Visora",
+      "collection": "vast-quiet-cinematic",
+      "family": "editorial minimal desert",
+      "vocabulary": [
+        "cream desert dunescape",
+        "lone walking silhouette",
+        "giant near-black sans headline",
+        "vast empty sky",
+        "flat gray CTA block",
+        "footer social row"
+      ],
+      "note": "One figure, one dune, one headline - scale does everything.",
+      "added": "2026-07-20",
+      "imageRecipe": "minimal photograph of [SUBJECT: a lone figure walking along a desert dune ridge] at dusk, vast cream-white empty sky filling the top 70% for typography, dune shadows in deep brown-black, tiny human scale against emptiness, warm muted grade, meditative stillness",
+      "heroUsage": "full-bleed; cream empty sky fills the top 70% as the text zone; dune and figure run along the bottom edge"
+    },
+    {
+      "id": "stillness-voxel",
+      "file": "stillness-voxel.png",
+      "title": "Stillness",
+      "collection": "data-as-texture",
+      "family": "editorial x voxel 3D",
+      "vocabulary": [
+        "voxel-rendered landscape",
+        "pixel mountains and river",
+        "serif headline with green emphasis",
+        "clean white ground",
+        "muted blue-coral-green palette",
+        "soft product buttons"
+      ],
+      "note": "The meditation landscape is built from blocks - digital material, calm subject.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: a serene mountain landscape with river and pine trees] built entirely from small 3D voxels, Minecraft-diorama style at high fidelity, STRICT muted palette: slate-blue and dusty navy with white snow, coral-salmon accent patches, sage-green foliage, no bright greens, no browns, soft even studio light, isolated diorama on a clean white ground with generous empty space above for typography",
+      "heroUsage": "isolated diorama occupying the lower half of a white page; headline sits in the clean white above; page background matches the white so the asset floats in the layout"
+    },
+    {
+      "id": "roamfield",
+      "file": "roamfield.png",
+      "title": "Roamfield",
+      "collection": "print-tech-paper",
+      "family": "warm editorial x print DNA",
+      "vocabulary": [
+        "halftone landscape illustration",
+        "autumn palette dots",
+        "serif display headline",
+        "floating pill nav",
+        "black pill CTA",
+        "cream sky ground"
+      ],
+      "note": "Stillpage's trick at full bleed - the whole world is halftone.",
+      "added": "2026-07-20",
+      "imageRecipe": "pastoral landscape of [SUBJECT: autumn trees along a winding river], rendered as a vintage halftone print with coarse visible CMYK dots, warm oranges and greens against a cream paper sky, dot density fading toward the top for text space, nostalgic postcard composition",
+      "heroUsage": "full-bleed halftone scene; the cream sky at center holds the serif headline; pill nav floats on top"
+    },
+    {
+      "id": "dualite",
+      "file": "dualite.png",
+      "title": "Dualite",
+      "collection": "classical-remix",
+      "family": "classical x white editorial",
+      "vocabulary": [
+        "grainy classical philosopher illustration",
+        "serif italic emphasis word",
+        "white ground with thin orbit lines",
+        "blue pill CTA",
+        "trust logo row",
+        "warm red-blue drapery"
+      ],
+      "note": "Light-mode antiquity - philosopher sells the product by reading.",
+      "added": "2026-07-20",
+      "imageRecipe": "grainy vintage color illustration of [SUBJECT: a bearded philosopher in blue robe and red drapery reading a book], engraved-poster texture, isolated on a clean white ground with faint thin orbit lines behind, warm classical palette, right-side placement leaving left half empty for text",
+      "heroUsage": "right-half figure on white; faint orbit lines continue behind the left text column; logo row runs below"
+    },
+    {
+      "id": "journey-ascii-login",
+      "file": "journey-ascii-login.png",
+      "title": "Begin Your Journey",
+      "collection": "data-as-texture",
+      "family": "ASCII x split login",
+      "vocabulary": [
+        "full-bleed ASCII art panel",
+        "grayscale character-density image",
+        "techno display font",
+        "split-screen form + art",
+        "letterspaced CTA",
+        "monochrome restraint"
+      ],
+      "note": "The entire right half is one ASCII image - texture as the only decoration.",
+      "added": "2026-07-20",
+      "imageRecipe": "[SUBJECT: a sailboat on calm water under a crescent moon] rendered entirely as grayscale ASCII art, thousands of monospace characters varying in density to form the image, black characters on white, crisp legible glyphs, full-bleed vertical panel composition",
+      "heroUsage": "right panel of a hard vertical split - full-bleed ASCII art; white form panel left"
+    },
+    {
+      "id": "sumi",
+      "file": "sumi.png",
+      "title": "SUMI",
+      "collection": "dither-mono",
+      "family": "ink-wash B&W editorial",
+      "vocabulary": [
+        "sumi-e ink wash landscape",
+        "galaxy speckle within ink clouds",
+        "tiny lone figure",
+        "vast white ground",
+        "mono status marginalia",
+        "small caps nav"
+      ],
+      "note": "Ink wash carries B&W without dither - galaxy inside the brushstroke.",
+      "added": "2026-07-20",
+      "imageRecipe": "sumi-e ink wash painting of [SUBJECT: mountain ridges with pine trees] dissolving into a starry galaxy cloud, black ink gradients with white star speckle, tiny lone human silhouette below, vast empty white paper above and around, meditative negative space, single accent nowhere - pure monochrome",
+      "heroUsage": "centered illustration in the lower two-thirds of a white page; headline centered above; vast white margins all around"
+    }
   ]
 }

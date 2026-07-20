@@ -41,6 +41,7 @@ You are an expert UI designer cataloging a personal taste gallery. Analyze this 
   "vocabulary": ["5-8 objective design-vocabulary terms an expert would use: texture treatments, type moves, color logic, layout devices, marginalia"],
   "note": "one sentence: the single most stealable idea in this design",
   "imageRecipe": "an image-generation prompt that would recreate this design's hero/background image STYLE with the subject swapped out: describe treatment, texture, palette, lighting, composition and negative space precisely, and write the subject as a bracketed slot like [SUBJECT: original subject here]. If the design has no meaningful hero image, use null.",
+  "heroUsage": "one sentence describing exactly how the hero image sits in THIS layout - full-bleed vs isolated-on-white vs split-panel vs dimmed-behind-UI, which zones stay empty for text, where nav/CTAs overlap. Null if no hero image.",
   "collection": "<one of: ${collectionsSummary} | or 'NEW'>",
   "newCollection": { "id": "kebab-id", "name": "Name", "description": "...", "deployFor": "...", "vocabulary": ["..."], "risk": "one bold move suggestion", "accent": "#hex", "imageStyle": "generalized [SUBJECT] image-style template for this collection" }
 }
@@ -103,6 +104,7 @@ for (const src of args) {
     note: result.note,
     added: today,
     ...(result.imageRecipe ? { imageRecipe: result.imageRecipe } : {}),
+    ...(result.heroUsage ? { heroUsage: result.heroUsage } : {}),
   });
   console.log(`  ✓ ${result.title} → ${collectionId} [${result.vocabulary.length} terms]`);
 }
