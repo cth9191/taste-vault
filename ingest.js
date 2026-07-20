@@ -44,7 +44,7 @@ You are an expert UI designer cataloging a personal taste gallery. Analyze this 
   "collection": "<one of: ${collectionsSummary} | or 'NEW'>",
   "newCollection": { "id": "kebab-id", "name": "Name", "description": "...", "deployFor": "...", "vocabulary": ["..."], "risk": "one bold move suggestion", "accent": "#hex", "imageStyle": "generalized [SUBJECT] image-style template for this collection" }
 }
-Rules: vocabulary must be objective and promptable (usable in a design brief), not opinions. The imageRecipe must be usable directly in an image generator (Higgsfield gpt_image_2) - style locked, subject swappable. Only use "NEW" + newCollection if the screenshot genuinely fits none of the existing collections. Return raw JSON only.`;
+Rules: vocabulary must be objective and promptable (usable in a design brief), not opinions. The imageRecipe must be usable directly in an image generator (Higgsfield gpt_image_2) - style locked, subject swappable. Write it as a full-bleed hero-background composition (camera inside the scene, edges bleeding off-frame, explicit negative space for a headline) - never an isolated 3D asset, sticker, or turntable product render. If color IS the style, use a "STRICT palette:" clause listing allowed colors and explicit exclusions. Only use "NEW" + newCollection if the screenshot genuinely fits none of the existing collections. Return raw JSON only.`;
 
   const out = execFileSync("claude", ["-p", prompt, "--output-format", "text"], {
     encoding: "utf8",

@@ -375,8 +375,12 @@ Reference feel: ${refs}
 House DNA: ${DATA.dna.constants.map(s=>s.split(' - ')[0]).join('; ')}
 Never: ${DATA.dna.never.join(', ')}
 One risk: ${c.risk}
-Hero asset: generate before building - fill [SUBJECT] and send to Higgsfield gpt_image_2 at 2K:
+
+WORKFLOW - asset first, page second:
+Step 1. Generate the hero asset NOW, before any code. Fill [SUBJECT], then Higgsfield gpt_image_2, 16:9, resolution 2k, quality high:
   "${c.imageStyle}"
+  It must read as a full-bleed hero background (camera inside the scene, edges bleed, negative space held for the headline) - not an isolated 3D asset or product render. Draft at 1k/low first to check composition, then final at 2k/high.
+Step 2. Build the page AROUND the real asset - measure its negative space and place typography where the image leaves room.
 Everything else: your call. Surprise me.`;
 }
 
@@ -397,6 +401,14 @@ function copyStyleBrief(id){navigator.clipboard.writeText(styleBriefFor(id));fla
 function copyStyleVocab(id){const s=STYLES.styles.find(x=>x.id===id);navigator.clipboard.writeText(s.vocabulary.join(', '));flash('smsg-'+id);}
 function copyBrief(id){navigator.clipboard.writeText(briefFor(id));flash('msg-'+id);}
 
+function heroWrap(recipe, imgPath){
+  return `${recipe}
+
+USAGE CONTEXT (critical): this is a full-bleed website HERO BACKGROUND, not an isolated 3D asset or product render. Camera lives inside the scene; edges bleed off-frame; no turntable/diorama framing, no object floating on a studio ground. Compose 16:9 at 2K with the stated negative space held clear for headline and UI overlay.${imgPath?`
+
+STYLE REFERENCE: upload ${imgPath} (media_upload / media_import_url) and pass it as an image reference in the generation call. Match its treatment, texture, palette and compositional balance - NOT its subject or content.`:''}`;
+}
+
 function entryBriefFor(id){
   const e = DATA.entries.find(x=>x.id===id);
   const c = DATA.collections.find(x=>x.id===e.collection);
@@ -409,9 +421,14 @@ Reference: "${e.title}" - Read the screenshot at ${imgPath} before designing. Ma
 Intent: [FILL: 1-2 lines - what this should feel like and why]
 House DNA: ${DATA.dna.constants.map(s=>s.split(' - ')[0]).join('; ')}
 Never: ${DATA.dna.never.join(', ')}
-One risk: ${c.risk}${e.imageRecipe?`
-Hero asset: fill [SUBJECT] and generate via Higgsfield gpt_image_2 at 2K before building:
-  "${e.imageRecipe}"`:''}
+One risk: ${c.risk}
+
+WORKFLOW - asset first, page second:${e.imageRecipe?`
+Step 1. Generate the hero asset NOW, before any code. Fill [SUBJECT], then Higgsfield gpt_image_2, 16:9, resolution 2k, quality high:
+  "${e.imageRecipe}"
+  It must read as a full-bleed hero background (camera inside the scene, edges bleed, negative space held for the headline) - not an isolated 3D asset. Upload the reference screenshot above and pass it as an image reference: match treatment, not content. Draft at 1k/low first to check composition, then final at 2k/high.
+Step 2. Build the page AROUND the real asset - measure its negative space and place typography where the image leaves room.`:`
+Step 1. Build the page - this reference carries no hero image; typography and structure do the work.`}
 Everything else: your call. Surprise me.`;
 }
 function copyVocab(id){const c=DATA.collections.find(x=>x.id===id);navigator.clipboard.writeText(c.vocabulary.join(', '));flash('msg-'+id);}
@@ -428,7 +445,7 @@ function openModal(id){
     wrap.style.display='block';
     document.getElementById('mRecipe').innerHTML=e.imageRecipe.replace(/\[SUBJECT[^\]]*\]/g,m=>`<span class="slot">${m}</span>`);
     document.getElementById('mCopyRecipe').style.display='';
-    document.getElementById('mCopyRecipe').onclick=()=>{navigator.clipboard.writeText(e.imageRecipe);flash('mMsg');};
+    document.getElementById('mCopyRecipe').onclick=()=>{navigator.clipboard.writeText(heroWrap(e.imageRecipe,(DATA.meta.imagesPath||'')+e.file));flash('mMsg');};
   } else { wrap.style.display='none'; document.getElementById('mCopyRecipe').style.display='none'; }
   document.getElementById('mCopyBrief').onclick=()=>{navigator.clipboard.writeText(entryBriefFor(e.id));flash('mMsg');};
   document.getElementById('modal').showModal();
