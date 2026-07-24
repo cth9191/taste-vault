@@ -90,8 +90,18 @@ for (const src of args) {
     collectionId = nc.id;
   }
   if (!gallery.collections.some((c) => c.id === collectionId)) {
-    console.warn(`  ! Unknown collection "${collectionId}" — filing under first collection`);
-    collectionId = gallery.collections[0].id;
+    if (gallery.collections.length === 0) {
+      gallery.collections.push({
+        id: "unsorted", name: "Unsorted",
+        description: "Entries awaiting a real collection.",
+        deployFor: "", vocabulary: [], risk: "", accent: "#C15F3C", imageStyle: "",
+      });
+      console.warn(`  ! Empty vault — seeded an "unsorted" collection`);
+      collectionId = "unsorted";
+    } else {
+      console.warn(`  ! Unknown collection "${collectionId}" — filing under first collection`);
+      collectionId = gallery.collections[0].id;
+    }
   }
 
   gallery.entries.push({

@@ -216,7 +216,7 @@
   <header>
     <span class="reg tl"></span><span class="reg tr"></span>
     <div class="h-top">
-      <div class="h-kicker">Personal taste catalog · 6 collections</div>
+      <div class="h-kicker">Personal taste catalog</div>
       <div class="h-coord mono" id="coordCount"></div>
     </div>
     <h1>Taste <em>Vault</em></h1>
@@ -292,7 +292,7 @@ async function boot(){
   document.getElementById('dnaConstants').innerHTML = DATA.dna.constants.map(c=>`<li>${c}</li>`).join('');
   document.getElementById('dnaNever').innerHTML = DATA.dna.never.map(c=>`<li>${c}</li>`).join('');
   document.getElementById('coordCount').textContent = `${DATA.entries.length} ENTRIES · ${DATA.collections.length} COLLECTIONS`;
-  document.getElementById('footStamp').textContent = `LAST INGEST ${DATA.entries.map(e=>e.added).sort().at(-1)} · ${DATA.entries.length} SPECIMENS`;
+  document.getElementById('footStamp').textContent = `LAST INGEST ${DATA.entries.map(e=>e.added).sort().at(-1)||'—'} · ${DATA.entries.length} SPECIMENS`;
   renderTabs(); renderPanels(); renderGrid();
 }
 

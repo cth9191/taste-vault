@@ -94,7 +94,7 @@ The repo ships with my taste as a working demo. To start your own vault:
 
 Editing `data/gallery.json` by hand is always fine — it's the source of truth. Re-cluster by changing an entry's `collection`.
 
-`data/styles.json` is a bonus: reference vocabulary for the standard aesthetic families of the modern web (editorial minimalism, warm editorial, brutalism, …) with canonical example sites — borrowed language for looks your own inspo doesn't cover yet.
+`data/styles.json` powers the **◈ REFERENCE STYLES** tab: the standard aesthetic families of the modern web (editorial minimalism, warm editorial, brutalism, …), each with recognition cues, vocabulary, canonical example sites, and its own COPY BRIEF button — borrowed language for looks your own inspo doesn't cover yet.
 
 ## Structure
 
