@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reference to Design"
+  short_description: "Translate screenshots into original frontend directions"
+  default_prompt: "Use $reference-to-design to inspect my visual references, build three original directions for my product, and help me refine the one I choose."

@@ -1,4 +1,4 @@
 @echo off
 cd /d "%~dp0"
-start "" http://localhost:4610
-python -m http.server 4610
+start "" http://127.0.0.1:4610/?v=2
+python server.py --port 4610

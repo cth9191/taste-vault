@@ -1,0 +1,20 @@
+const SPECIMENS = {
+  "editorial-minimalism": `<div class="t">Issue tracking for teams that ship.</div><div class="s">Fast, keyboard-first, and quiet about it.</div><span class="b">Start building</span>`,
+  "warm-editorial": `<div class="t">Software should feel like a good book.</div><div class="s">Built slowly, on purpose.</div><span class="b">Begin reading</span>`,
+  "terminal-core": `<div class="t">$ vaultctl deploy --edge</div><div class="s">→ built in 412ms · 0 warnings</div><div class="s">→ live in 14 regions <span class="cur"></span></div>`,
+  "swiss-international": `<div class="t">form follows<br><span class="red">function.</span></div><div class="rule"></div>`,
+  "brutalist-raw": `<div class="t">INDEX OF /PROJECTS</div><div class="s">Loads in 40ms. Outlives your framework.<br><a href="#">projects.html</a> · <a href="#">now.html</a></div>`,
+  "neo-brutalism": `<div class="t">Ship loud.</div><div class="card-n">Shadows COMMIT here.</div>`,
+  "neon-brutalist": `<span class="tag">Review</span><div class="t">The album of the year <em>is a spreadsheet.</em></div>`,
+  "data-dense-pro": `<div class="lbl">Requests</div><div class="val">184.2k <span class="up">▲2.4%</span></div><div class="lbl" style="margin-top:8px">p99</div><div class="val">218ms</div>`,
+  "cinematic-dark": `<div class="o">A new kind of engine</div><div class="t">Render reality.</div>`,
+  "glass-soft-futurism": `<div class="g"><div class="t">Ambient by design.</div><div class="s">Interface as frosted architecture.</div></div>`,
+  "playful-color": `<span class="bl b1"></span><span class="bl b2"></span><div class="t">Learning that feels like <em>playing.</em></div><span class="b">Start your streak</span>`,
+  "magazine-print": `<div class="mh">The Ledger</div><div class="cols"><p>When the interface borrows the newspaper's clothes, it borrows its credibility. Columns imply editing; a masthead implies an institution worth trusting.</p></div>`,
+  "y2k-retro-futurism": `<div class="t">FUTUREPROOF</div><div class="s">est. 1999 · vol. 2</div><div class="horizon"></div>`,
+  "japanese-minimalism": `<span class="dot"></span><div class="t">間<br>less, placed well</div>`,
+  "quiet-luxury": `<div class="o">Formulation No. 4</div><div class="t">PARSLEY SEED</div><div class="rule"></div>`,
+  "tactile-skeuomorph": `<div class="knob"></div><div class="t">GAIN <b>−12dB</b><br>op-1 field manual</div>`,
+  "immersive-3d": `<div class="orb"></div><div class="t">Enter the world</div><div class="scroll">scroll to begin ↓</div>`,
+  "bento-grid": `<div class="cell hero">One product,<br>told in tiles<span class="num">▤</span></div><div class="cell">Sync<span class="num">40ms</span></div><div class="cell">Teams<span class="num">12k</span></div><div class="cell">Uptime<span class="num">99.99</span></div><div class="cell">Regions<span class="num">14</span></div>`
+};

@@ -3,7 +3,7 @@
     "owner": "Chase",
     "created": "2026-07-20",
     "version": 2,
-    "imagesPath": "C:\\Users\\Chase\\projects\\taste-vault\\images\\"
+    "imagesPath": "images/"
   },
   "dna": {
     "name": "House DNA",
@@ -26,6 +26,92 @@
     ]
   },
   "collections": [
+    {
+      "id": "monumental-editorial",
+      "name": "Monumental Editorial",
+      "description": "Oversized typography, asymmetric white space, and carefully placed gallery images. The layout and type scale carry the identity.",
+      "deployFor": "Architecture, design studios, portfolios, galleries, and culture brands.",
+      "vocabulary": [
+        "monumental sans typography",
+        "staggered headline lines",
+        "asymmetric editorial grid",
+        "extreme negative space",
+        "inset image gallery",
+        "restrained accent"
+      ],
+      "risk": "Let a headline span most of the viewport while a small image interrupts its geometry",
+      "accent": "#AD8969",
+      "imageStyle": "editorial image of [SUBJECT], deliberate gallery crop, natural material detail, restrained palette, no typography; build the oversized type and white space in code"
+    },
+    {
+      "id": "product-led-minimalism",
+      "name": "Product-Led Minimalism",
+      "description": "Clear white landing pages whose main visual is the actual product, framed by a controlled accent or atmospheric background.",
+      "deployFor": "SaaS platforms, productivity tools, dashboards, and workflow products.",
+      "vocabulary": [
+        "clear sans hierarchy",
+        "white space",
+        "product screenshot as proof",
+        "restrained page chrome",
+        "contrasting CTA pair",
+        "framed interface demonstration"
+      ],
+      "risk": "Let a single readable product interaction occupy most of the hero",
+      "accent": "#FF671D",
+      "imageStyle": "subtle atmospheric background for [SUBJECT], controlled accent palette and calm center, no UI or text; use real screenshots or code for product demonstrations"
+    },
+    {
+      "id": "technical-systems",
+      "name": "Technical Systems",
+      "description": "Instrument-panel precision meets oversized editorial type: maps, sensor imagery, grids, specifications, and sparse signal-orange annotations.",
+      "deployFor": "Geospatial tools, engineering, robotics, scientific instruments, and technical product storytelling.",
+      "vocabulary": [
+        "monumental grotesk headings",
+        "monospace telemetry",
+        "coordinate grids",
+        "sensor imagery",
+        "specification rails",
+        "signal-orange accents",
+        "tracking brackets"
+      ],
+      "risk": "Build the page around an annotated visual field with a headline at architectural scale",
+      "accent": "#FF5A00",
+      "imageStyle": "aerial or sensor-style visualization of [SUBJECT], restrained cinematic contrast, texture and terrain readable, no text or measurements; implement instrument overlays separately in SVG or CSS"
+    },
+    {
+      "id": "luminous-futurism",
+      "name": "Luminous Futurism",
+      "description": "Dark cinematic fields of light, iridescent natural subjects, and optical textures. Bright filaments and bloom establish the atmosphere.",
+      "deployFor": "Creative technology, AI tools, experimental studios, and expressive product launches.",
+      "vocabulary": [
+        "luminous filaments",
+        "deep navy negative space",
+        "iridescent botanical subject",
+        "blue and amber highlights",
+        "optical bloom",
+        "image-led composition"
+      ],
+      "risk": "Make one luminous organic subject the entire hero's focal point",
+      "accent": "#2DAACB",
+      "imageStyle": "[SUBJECT] illuminated by blue and warm amber light filaments on a deep navy ground, restrained luminous bloom, dimensional texture, deliberate dark copy space, no text"
+    },
+    {
+      "id": "cinematic-still-life",
+      "name": "Cinematic Still Life",
+      "description": "Tactile objects staged in dramatic studio light, with quiet negative space and refined typography. Materials and composition convey quality.",
+      "deployFor": "Premium physical products, craft, hospitality, clubs, and luxury retail.",
+      "vocabulary": [
+        "low-key studio lighting",
+        "tactile material contrast",
+        "off-center object grouping",
+        "deep negative space",
+        "refined serif display",
+        "cinematic foreground depth"
+      ],
+      "risk": "Let the physical subject and its lighting supply all of the page's decoration",
+      "accent": "#97784C",
+      "imageStyle": "premium studio still life of [SUBJECT], tactile natural materials, dramatic soft side lighting, deep dark backdrop, subject on one side and negative space on the other, no text"
+    },
     {
       "id": "print-tech-paper",
       "name": "Print-Tech Paper",
@@ -153,6 +239,346 @@
     }
   ],
   "entries": [
+    {
+      "id": "atelo-interior-gallery",
+      "file": "atelo-interior-gallery.png",
+      "title": "ATELO - Interior Gallery",
+      "collection": "monumental-editorial",
+      "family": "warm architectural editorial",
+      "vocabulary": [
+        "staggered five-image gallery",
+        "enlarged central photograph",
+        "faded peripheral images",
+        "cream ground and bronze accent",
+        "oversized offset sans headline",
+        "asymmetric whitespace",
+        "underlined case-study link"
+      ],
+      "note": "Make the image strip the portfolio preview, then let a giant staggered headline anchor the lower half. The central image has visual priority; a screenshot alone does not establish carousel behavior.",
+      "added": "2026-09-08",
+      "imageRecipe": "architectural editorial photograph of [SUBJECT: a contemporary interior with warm timber cabinetry and pale stone], soft daylight, restrained cream and walnut palette, realistic material detail, straight verticals, no text or graphics",
+      "heroUsage": "five separate interior images across the upper page with a larger central frame; use code for opacity differences, image sizing, bronze details, and oversized lower headline"
+    },
+    {
+      "id": "zuno-orange-workspace",
+      "file": "zuno-orange-workspace.png",
+      "title": "Zuno - Orange Workspace",
+      "collection": "product-led-minimalism",
+      "family": "white SaaS x orange product frame",
+      "vocabulary": [
+        "centered two-line sans headline",
+        "orange corner-mark buttons",
+        "generous white space",
+        "dashboard as hero proof",
+        "peach gradient image frame",
+        "rounded application window",
+        "lightweight sidebar and metrics"
+      ],
+      "note": "Use one large product view to substantiate a short promise; the warm surround highlights the dashboard while the page itself stays white.",
+      "added": "2026-09-08",
+      "imageRecipe": "soft peach and orange atmospheric texture with a subtle fine grain and brighter center, used behind [SUBJECT: a workspace dashboard], no interface, no text, no logos",
+      "heroUsage": "center headline and paired CTAs above a wide dashboard built in code or supplied as a real screenshot; place only the warm texture behind the dashboard frame"
+    },
+    {
+      "id": "royal-gambit-chess",
+      "file": "royal-gambit-chess.png",
+      "title": "Royal Gambit - Chess Still Life",
+      "collection": "cinematic-still-life",
+      "family": "dark luxury x chess editorial",
+      "vocabulary": [
+        "low-key teal-black photography",
+        "wood and ivory chess pieces",
+        "oversized white serif headline",
+        "subject clustered on right",
+        "outline and solid rectangular CTAs",
+        "foreground perspective",
+        "serif statistics with thin dividers"
+      ],
+      "note": "Treat the product still life as the entire stage, holding the left half in darkness for copy. Material contrast creates the premium character.",
+      "added": "2026-09-08",
+      "imageRecipe": "low-key studio still life of [SUBJECT: wooden and ivory chess pieces on a dark chessboard], pieces clustered on the right including one fallen piece, dramatic soft side light, deep teal-black background, shallow depth of field, tactile wood grain, left half mostly dark negative space, no text",
+      "heroUsage": "full-bleed background with white serif heading and paired CTAs on the left; reserve a quiet lower-right band for statistics rendered in HTML"
+    },
+    {
+      "id": "sakura-studio-art-gallery",
+      "file": "sakura-studio-art-gallery.png",
+      "title": "Sakura Studio - Art Gallery",
+      "collection": "monumental-editorial",
+      "family": "oversized editorial x illustrated gallery",
+      "vocabulary": [
+        "massive staggered black headline",
+        "three colorful artwork panels",
+        "pink accent CTA",
+        "vertical statistics rail",
+        "extreme white space",
+        "asymmetric content blocks",
+        "small gallery metadata"
+      ],
+      "note": "Separate the colorful art strip from the giant headline with an unusually large white interval. The image treatment is storybook, while the page structure is monumental editorial.",
+      "added": "2026-09-08",
+      "imageRecipe": "painterly animation-background illustration of [SUBJECT: a Japanese canal town in cherry-blossom season], pastel pink trees, turquoise water, delicate architecture, cohesive soft daylight, gallery-quality square composition, no text; create separate companion scenes with the same painting treatment",
+      "heroUsage": "three square illustrations in a row at upper-right, statistics rail at far left, and a large staggered two-line headline across the bottom; all typography and statistics remain in code"
+    },
+    {
+      "id": "synthos-ai-workspace",
+      "file": "synthos-ai-workspace.png",
+      "title": "Synthos - AI Workspace",
+      "collection": "product-led-minimalism",
+      "family": "split editorial x luminous product panels",
+      "vocabulary": [
+        "split headline and supporting copy",
+        "white page ground",
+        "black primary buttons",
+        "rounded luminous image stage",
+        "three connected UI panels",
+        "purple-to-peach light ribbons",
+        "dark center analytics card"
+      ],
+      "note": "Use the broad lower stage to explain a three-part product workflow. Purple and peach are intentional in this reference; preserve that choice when explicitly matching it even though the vault's general never-list discourages purple gradients.",
+      "added": "2026-09-08",
+      "imageRecipe": "abstract flowing light ribbons and fine particles behind [SUBJECT: three workspace panels], muted violet on the left transitioning to soft peach on the right, gentle luminous depth, low-detail central zones, no interface, text, charts, or logos",
+      "heroUsage": "headline left and explanation with CTAs right above a wide rounded artwork panel; build three contrasting product cards and their connecting arrows separately in code"
+    },
+    {
+      "id": "ambientica-shaping-spaces",
+      "file": "ambientica-shaping-spaces.png",
+      "title": "AMBIENTICA - Shaping Spaces",
+      "collection": "monumental-editorial",
+      "family": "architectural minimalism x monumental type",
+      "vocabulary": [
+        "oversized staggered sans headline",
+        "single inset interior photograph",
+        "white gallery ground",
+        "extreme negative space",
+        "small location metadata",
+        "asymmetric grid",
+        "wide rectangular consultation CTA"
+      ],
+      "note": "Let the photograph occupy a deliberate opening beside the headline instead of making it a background. Large type carries the identity; the warm interior provides the only substantial color.",
+      "added": "2026-09-08",
+      "imageRecipe": "editorial photograph of [SUBJECT: a contemporary living room with sculptural cream seating, copper pendant lights and warm recessed lighting], natural materials, warm neutral palette, soft daylight, straight architectural perspective, no text",
+      "heroUsage": "single rectangular interior image upper-right next to the first oversized headline line; second line offset right below; small supporting copy and a wide black CTA at lower-left"
+    },
+    {
+      "id": "stardust-pixel-light",
+      "file": "stardust-pixel-light.png",
+      "title": "Stardust - Pixel Light",
+      "collection": "luminous-futurism",
+      "family": "pixel optics x dark technology",
+      "vocabulary": [
+        "diagonal orange and blue light trails",
+        "visible square pixel texture",
+        "near-black full-bleed background",
+        "large bitmap-style headline",
+        "lower-left copy stack",
+        "outlined floating case-study card",
+        "thin rectangular CTA borders"
+      ],
+      "note": "Make the pixel treatment consistent across the image and display type. Place the case-study card in a quieter upper-right area of the sweeping light field.",
+      "added": "2026-09-08",
+      "imageRecipe": "abstract long-exposure light trails suggesting [SUBJECT: energy moving through a network], bright amber-orange diagonals and cool blue streaks on a near-black ground, visible fine square pixel-grid texture, luminous bloom, quieter lower-left zone for type and upper-right zone for a card, no text or UI",
+      "heroUsage": "full-bleed pixel-textured artwork; set headline and copy lower-left and one compact case-study card upper-right in HTML; keep border and type rendering crisp"
+    },
+    {
+      "id": "drone-mapping-os",
+      "file": "drone-mapping-os.png",
+      "title": "DRONE - Mapping OS",
+      "collection": "technical-systems",
+      "family": "dark geospatial x instrument display",
+      "vocabulary": [
+        "huge white sans title",
+        "dark olive dot grid",
+        "orange coordinate crosshairs",
+        "thermal-style scene fragment",
+        "thin map contour outline",
+        "monospace telemetry",
+        "vertical measurement ruler"
+      ],
+      "note": "Use the map, photograph, and instrument marks as a single visual field. This is a design reference; its geographic and sensor labels are sample content.",
+      "added": "2026-09-08",
+      "imageRecipe": "stylized thermal-camera image of [SUBJECT: a vehicle and standing figure in a dark landscape], near-black olive shadows with bright white heat silhouettes and subtle sensor grain, subject concentrated lower-left, no measurements, map labels, grids, or text",
+      "heroUsage": "huge heading across top; thermal artwork lower-left, vector map contour through center-right, and compact explanation lower-right; implement grid, rulers, coordinates and crosshairs in SVG or CSS"
+    },
+    {
+      "id": "drone-thermal-specimen",
+      "file": "drone-thermal-specimen.png",
+      "title": "DRONE - Thermal Specimen",
+      "collection": "technical-systems",
+      "family": "technical editorial x grayscale specimen",
+      "vocabulary": [
+        "oversized parenthesized headline",
+        "left specification rail",
+        "grayscale thermal landscape",
+        "monospace annotation labels",
+        "right vertical legend",
+        "cropped giant product identifier",
+        "single safety-orange CTA"
+      ],
+      "note": "Frame a large sensor-style visual with editorial specification rails. Preserve the hierarchy and measurement vocabulary without treating the mockup specifications as verified facts.",
+      "added": "2026-09-08",
+      "imageRecipe": "grayscale infrared-style visualization of [SUBJECT: a rugged desert valley with a few distant bright silhouettes], dark rocky terrain, high-contrast white thermal signatures, subtle camera grain, elevated wide view, no brackets, captions, measurements, or interface",
+      "heroUsage": "large central landscape panel between a pale specification sidebar and narrow right legend; headline above and cropped product identifier below; create all labels and markers in code"
+    },
+    {
+      "id": "rooted-textile-landscape",
+      "file": "rooted-textile-landscape.png",
+      "title": "ROOTED - Textile Landscape",
+      "collection": "print-tech-paper",
+      "family": "tactile eco editorial x canvas texture",
+      "vocabulary": [
+        "split headline and mission copy",
+        "olive clipped-corner CTA",
+        "muted partner-logo row",
+        "ochre mountain landscape",
+        "visible woven-canvas texture",
+        "clipped image corner",
+        "clean white editorial ground"
+      ],
+      "note": "Give environmental imagery a tangible fabric surface, then echo the artwork's clipped corner in the CTA. Closest to Print-Tech Paper through its tactile reproduction treatment.",
+      "added": "2026-09-08",
+      "imageRecipe": "landscape of [SUBJECT: a mountain ridge above dense forest] reproduced on coarse woven natural canvas, visible linen weave across sky and terrain, ochre sunlight and deep olive forest, warm muted earth palette, wide composition, no words or logos",
+      "heroUsage": "wide landscape panel below a split headline-and-copy row and muted partner strip; clip the bottom-right corner with CSS to echo the CTA geometry"
+    },
+    {
+      "id": "sakura-cosmic-tree",
+      "file": "sakura-cosmic-tree.png",
+      "title": "SAKURA - Cosmic Tree",
+      "collection": "luminous-futurism",
+      "family": "romantic serif x cosmic botanical",
+      "vocabulary": [
+        "luminous pink blossom tree",
+        "blue and peach energy trails",
+        "black image stage on white page",
+        "serif navigation and display",
+        "pink headline accent",
+        "corner-bracket CTA",
+        "image-first editorial hierarchy"
+      ],
+      "note": "Pair a maximal luminous botanical image with a restrained white editorial frame. The headline appears below the artwork, so the generated image needs no embedded headline.",
+      "added": "2026-09-08",
+      "imageRecipe": "cinematic fantasy artwork of [SUBJECT: a flowering cherry tree rooted on a small rock], pink luminous blossoms and drifting petals, blue and peach light filaments crossing deep navy space, intricate bark, centered composition, no words, labels, or interface",
+      "heroUsage": "large inset wide image directly below the navigation; serif headline below-left and supporting copy with a bracketed CTA below-right; pink accents stay in HTML and CSS"
+    },
+    {
+      "id": "bloomy-paris-builder",
+      "file": "bloomy-paris-builder.png",
+      "title": "Bloomy.ai - Illustrated Paris",
+      "collection": "illustrated-storybook",
+      "family": "pastel storybook x prompt interface",
+      "vocabulary": [
+        "pastel illustrated cityscape",
+        "cherry blossoms and turquoise river",
+        "open pale sky for copy",
+        "centered serif headline",
+        "translucent prompt composer",
+        "pill navigation bar",
+        "lavender accent typography"
+      ],
+      "note": "Let an illustrated city establish the setting while a real prompt composer floats in its open sky. The specific pastel palette is intentional for this reference.",
+      "added": "2026-09-08",
+      "imageRecipe": "pastel animation-background painting of [SUBJECT: Paris along the Seine with bridges and the Eiffel Tower], cherry blossoms framing the left edge, turquoise river, lavender and powder-blue buildings, soft cream sky covering the upper half, dreamy spring daylight, no words or interface",
+      "heroUsage": "full-bleed city illustration anchors the bottom and edges; centered headline and a real translucent input panel sit in the calm upper-middle sky; keep navigation and all controls in code"
+    },
+    {
+      "id": "nebula-luminous-flower",
+      "file": "nebula-luminous-flower.png",
+      "title": "NEBULA - Luminous Flower",
+      "collection": "luminous-futurism",
+      "family": "dark cosmic botanical x editorial type",
+      "vocabulary": [
+        "iridescent flower on right",
+        "blue and amber light filaments",
+        "deep navy negative space",
+        "lower-left oversized heading",
+        "cyan italic serif accent",
+        "corner-mark outline CTA",
+        "full-bleed luminous artwork"
+      ],
+      "note": "Use one recognizable organic subject to give abstract light trails a focal point. Reserve the dark lower-left region for the entire copy stack.",
+      "added": "2026-09-08",
+      "imageRecipe": "cinematic close view of [SUBJECT: one iridescent flower on a slender stem], translucent metallic petals glowing warm amber at the center, blue and peach light filaments crossing a deep navy void, flower on right, left and lower-left dark and quiet for text, no words or interface",
+      "heroUsage": "full-bleed image with the flower right; supporting copy above the large lower-left headline; navigation and corner-mark CTA overlay the dark top edge"
+    },
+    {
+      "id": "root-soil-golden-fields",
+      "file": "root-soil-golden-fields.png",
+      "title": "ROOT&SOIL - Golden Fields",
+      "collection": "vast-quiet-cinematic",
+      "family": "warm pastoral x centered landing page",
+      "vocabulary": [
+        "golden rolling grassland",
+        "low horizon and pale peach sky",
+        "centered black sans headline",
+        "terracotta text accent",
+        "corner-bracket CTAs",
+        "autumn trees as scale markers",
+        "partner marks over foreground"
+      ],
+      "note": "Use the sky as the page background so the landscape flows into the copy without a visible image boundary. Warm pastoral variation of the cinematic collection.",
+      "added": "2026-09-08",
+      "imageRecipe": "wide cinematic photograph of [SUBJECT: rolling golden grassland with scattered autumn trees], terracotta foliage and amber grasses, soft hazy peach sky covering the upper half, warm low-angle sunlight, gentle layered hills and quiet center sky, no text or logos",
+      "heroUsage": "full-bleed landscape with horizon below the centered heading and paired CTAs; softly blend the sky into the warm page ground and place real partner marks along the lower foreground"
+    },
+    {
+      "id": "drone-see-to-sea",
+      "file": "drone-see-to-sea.png",
+      "title": "DRONE - See to Sea",
+      "collection": "technical-systems",
+      "family": "maritime editorial x telemetry",
+      "vocabulary": [
+        "monumental black headline",
+        "aerial ocean photograph",
+        "thin orange image border",
+        "white tracking brackets",
+        "monospace corner telemetry",
+        "small node-link diagram",
+        "oversized numbered body sections"
+      ],
+      "note": "Contrast an enormous editorial headline with a dense annotated maritime image. Group with the other DRONE references as another section of the same visual system.",
+      "added": "2026-09-08",
+      "imageRecipe": "top-down aerial photograph of [SUBJECT: a large vessel crossing deep teal open water], long white wake trailing to the right, crisp textured ocean, vessel stretching horizontally through center, no reticles, labels, diagrams, or text",
+      "heroUsage": "huge headline above a wide ocean image; put orange rules, white tracking brackets, corner metadata, and a compact SVG relationship diagram over it; numbered body sections sit below"
+    },
+    {
+      "id": "drone-thermion-heatmap",
+      "file": "drone-thermion-heatmap.png",
+      "title": "DRONE - Thermion Heatmap",
+      "collection": "technical-systems",
+      "family": "white technical editorial x false-color map",
+      "vocabulary": [
+        "left narrative and CTA rail",
+        "false-color aerial heatmap",
+        "white outlined scan regions",
+        "monospace status metadata",
+        "orange clipped-corner CTA",
+        "giant cropped product wordmark",
+        "map scale and compass"
+      ],
+      "note": "Place the colored analytical visual beside a quiet white explanation rail. Reuse the DRONE typography and orange accents while letting the heatmap introduce functional color.",
+      "added": "2026-09-08",
+      "imageRecipe": "stylized false-color thermal map of [SUBJECT: a cluster of buildings and surrounding terrain seen from above], deep blue shadows, cyan transitions, green and yellow midtones, orange-red warm regions, fine sensor texture, no actual measurements, labels, markers, or interface",
+      "heroUsage": "left white column with description and orange CTA; large heatmap right; build region outlines, compass, scale, telemetry and cropped bottom wordmark in code"
+    },
+    {
+      "id": "drone-from-above",
+      "file": "drone-from-above.png",
+      "title": "DRONE - From Above",
+      "collection": "technical-systems",
+      "family": "aerial terrain x oversized instrument typography",
+      "vocabulary": [
+        "full-bleed aerial desert imagery",
+        "fine rectangular coordinate grid",
+        "massive staggered white headline",
+        "orange focus brackets",
+        "monospace map metadata",
+        "small lower explanatory block",
+        "cropped product identifier"
+      ],
+      "note": "Lay the giant headline on the same grid as the terrain image and instrument marks. Keep this alongside the DRONE map, thermal, and maritime references as a consistent family.",
+      "added": "2026-09-08",
+      "imageRecipe": "oblique aerial photograph of [SUBJECT: vehicles traveling along a winding road through rugged arid hills], muted brown terrain, dark cinematic exposure, distinct road running diagonally, spacious upper-right terrain for white headline, no grid, markers, labels, or text",
+      "heroUsage": "full-bleed terrain image with large staggered headline across upper-right; overlay thin CSS/SVG grid and a small orange annotation; add compact lower copy and cropped product ID in HTML"
+    },
     {
       "id": "stillpage",
       "file": "stillpage.png",
@@ -650,6 +1076,27 @@
       "added": "2026-07-20",
       "imageRecipe": "[SUBJECT: a sailboat on calm water under a crescent moon] rendered entirely as grayscale ASCII art, thousands of monospace characters varying in density to form the image, black characters on white, crisp legible glyphs, full-bleed vertical panel composition",
       "heroUsage": "right panel of a hard vertical split - full-bleed ASCII art; white form panel left"
+    },
+    {
+      "id": "crix-dreamscape-product",
+      "file": "crix-dreamscape-product.png",
+      "title": "CRIX - Dreamscape Product",
+      "collection": "vast-quiet-cinematic",
+      "family": "pastel cinematic x product-led SaaS",
+      "vocabulary": [
+        "pastel sunrise above cloud-covered mountains",
+        "surreal architectural portal",
+        "floating dashboard over landscape",
+        "white fog fade into page content",
+        "black-to-gray headline hierarchy",
+        "rounded white cards with soft deep shadows",
+        "alternating white and charcoal sections",
+        "oversized translucent footer wordmark"
+      ],
+      "note": "Let one dreamlike landscape establish the atmosphere, then reuse it behind product-detail cards and the footer to connect the whole page. Closest to Vast Quiet Cinematic through its scale, mist, and landscape-led identity, but warmer and more product-dense than the collection's quietest examples. Reference includes body layouts, pricing, a testimonial, and a closing CTA; treat its copy and endorsements as mockup content, not reusable product facts.",
+      "added": "2026-09-08",
+      "imageRecipe": "dreamlike cinematic landscape of [SUBJECT: layered mountain peaks above a sea of clouds], soft peach and pale pink sunrise with powder-blue shadows, delicate alpine flowers at the lower edges, one minimal pale stone rectangular portal on the horizon, airy atmospheric depth and soft natural light, matte photographic treatment, upper third fading into almost-white open sky for headline space, central lower area kept calm for a separately composited product screenshot, no text, no logos, no dashboard or interface elements",
+      "heroUsage": "wide landscape behind a real HTML product screenshot centered in the lower half; headline sits upper-left in the pale sky with a separate CTA on the right; landscape and dashboard fade through white mist into the body. Reuse the landscape treatment in feature-card art and the footer; keep interface text, cards, and wordmark in code. This reference is a two-column presentation of a long page, not a two-column live-page layout."
     },
     {
       "id": "sumi",
