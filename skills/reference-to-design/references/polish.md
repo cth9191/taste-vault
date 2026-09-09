@@ -24,9 +24,13 @@ Offer useful presets such as:
 
 Presets should set real editable values, not merely relabel the same output. Controls should map to actual implemented behavior. Group the parameters that materially help this design: typography/spacing, image treatment, motion/timing, interaction details, and any optional signature component. Do not add nonfunctional switches or expose implementation jargon to the user.
 
+For an expanded studio, use collapsible groups with live value/unit readouts. A useful menu is typography and spacing; hero treatment and crop; existing graphic details; color and buttons; motion; and a signature footer. Adapt the controls to the chosen design. See the [finishing-studio prompt](prompts.md#optional-a-finishing-studio-with-presets) for concrete examples without making every example mandatory.
+
+Offer a small set of available typefaces; only expose weights that the loaded fonts support. Label viewport-specific settings and disable or hide irrelevant controls. Appearance should update live; entrance timing needs a replay action. Show when a preset has custom changes. Keep the panel keyboard usable and independently scrollable, with a clear way to hide it on mobile.
+
 Include compare-original/restore, replay entrance, reset-to-preset, and hide/show panel. For recording or reuse, support saving settings and a clean preview carrying the chosen values. Explain whether Save uses local browser storage, changes source files, or produces a portable artifact. Never imply localStorage publishes or permanently implements a final design.
 
-When export/import is useful, include a versioned settings object and validate its fields and ranges. Loading malformed data should preserve a usable page and give a clear error. A clean preview must retain custom settings, not silently revert to a preset. Keep a path back to the panel.
+When export/import is useful, include a versioned settings object and validate its fields and ranges. When adding controls, supply compatible defaults for older records or explicitly migrate their version. Loading malformed data should preserve the current working settings and give a clear error. A clean preview must retain custom settings, not silently revert to a preset. Keep a path back to the panel.
 
 ## Motion behavior
 
@@ -38,7 +42,7 @@ Cancel or finish previous animations when replaying or changing settings. Repeat
 
 ## Verify and finish
 
-Check the preset modes, representative range extremes, compare/restore, replay, reset, save/reload, clean preview and any export/import round trip. Inspect desktop, an intermediate width and mobile. Verify that controls do not block the page permanently on small screens. Check reduced motion and the original page's actual product interactions.
+Verify that controls change the intended rendered property or behavior, not just their labels or internal state. Check the preset modes, representative range extremes and typeface choices, compare/restore, replay, reset, save/reload, clean preview and any export/import round trip. Inspect desktop, an intermediate width and mobile. Verify that controls do not block the page permanently on small screens. Check reduced motion and the original page's actual product interactions.
 
 Compare at the same viewport width; opening a side panel can itself change the responsive layout. Keep the earlier versions unchanged. Distinguish a tested design sandbox from a production build or completed browser-independent accessibility audit.
 
