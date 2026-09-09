@@ -4,6 +4,8 @@ A small skill and a practical prompt sequence for turning visual references into
 
 **Three directions → choose one → three variations → refine.**
 
+After choosing a composition, the optional [finishing studio](../skills/reference-to-design/references/polish.md) adds Original, Restrained and Expressive presets, individual tweak controls, replay, compare, saved settings and a clean preview. Preserve earlier stages so the process stays reviewable.
+
 Use one direction when you already know what you want. The workflow is independent of any particular visual style, reference library, frontend stack or image provider. It can accompany a design skill you choose, or the model's own design judgment.
 
 ## Start here
@@ -48,4 +50,4 @@ This repository includes the Taste Vault gallery and its reference screenshots a
 
 When a result misses, save the brief, references inspected, actual render and specific failure. Adjust the narrow instruction that would have changed the decision. Useful failures include a dashboard built instead of a landing page, a generic result from unread references, an overly literal subject/layout combination, and refinements that drift into unrelated aesthetics. Do not grow the skill into a list of universal bans based on one design.
 
-Initial version: 0.1.0. The method grew from an iterative Vantage design study. The packaged skill has structural validation; it has not yet been evaluated across a broad set of independent projects.
+Current version: 0.2.0. Adds the optional finishing studio and its copy-and-paste prompt. The method grew from an iterative Vantage design study. The packaged skill has structural validation; it has not yet been evaluated across a broad set of independent projects.

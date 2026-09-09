@@ -78,6 +78,33 @@ Inspect the final renders and verify the working flow. Summarize the material
 changes and any remaining limitations. Save the chosen design decisions.
 ```
 
+## Optional: a finishing studio with presets
+
+```text
+I choose [VERSION]. Preserve that original and all previous comparisons.
+Create a separate polish page with a full-featured tweak panel.
+
+Keep our composition and aesthetic. Add Original, Restrained and Expressive
+presets with meaningful differences. Original must restore the unchanged
+chosen design. Let me adjust typography, spacing, image treatment, motion
+timing and the selected interaction details individually.
+
+For this design, explore [opening sequence / annotation interactions /
+section reveals / a product-relevant signature footer]. Choose treatments
+that fit the page rather than filling it with unrelated effects.
+
+Include compare-original/restore, replay entrance, reset preset, save settings,
+and hide/show panel. Provide a clean preview retaining my custom values and
+versioned export/import if practical. Explain where settings are saved.
+
+Keep the page usable immediately, respect reduced motion, and avoid stacking
+animations when replaying. Check desktop/mobile, representative parameter
+extremes, presets, saving, clean preview and the existing product flow.
+Let me choose the final settings before creating the finished page.
+```
+
+Read [the finishing-stage guidance](polish.md) for implementation and verification details. This is optional; a settled page may only need a small direct polish pass.
+
 ## Repair: too close to a reference
 
 ```text

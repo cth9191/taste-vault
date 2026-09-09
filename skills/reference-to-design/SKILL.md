@@ -62,6 +62,8 @@ For the second round, hold the chosen aesthetic, product story and primary asset
 
 ## Keep the process reusable
 
+When the user has chosen a composition and wants a tweak panel, motion or a finishing pass, read [references/polish.md](references/polish.md). This optional stage preserves the original, compares real presets, and lets the user tune details before committing to a final treatment.
+
 Save a lightweight design record alongside the project: brief, inspected sources, direction cards, asset prompts/paths, chosen direction, meaningful revisions and verification results. References may stay local; do not bundle another person's reference library into a shareable package by default.
 
 Read [references/prompts.md](references/prompts.md) when the user wants copy-and-paste prompts, an image prompt template or a reusable design record. Read [references/comparison.md](references/comparison.md) only when comparing design skills or documenting an experiment.

@@ -14,6 +14,8 @@ The repo now includes **Reference to Design**, a reusable skill and prompt pack 
 
 **Three directions → pick one → three variations → refine.**
 
+Once you choose a composition, an optional [polish studio](skills/reference-to-design/references/polish.md) lets you compare Original, Restrained and Expressive presets, tune individual details, and save a clean preview. The [prompt pack](skills/reference-to-design/references/prompts.md) includes the exact prompt for this stage.
+
 - [Copy-and-paste prompts](skills/reference-to-design/references/prompts.md): exact reusable wording for planning, building, refining and correcting results.
 - [Install and use the skill](docs/reference-to-design.md): use it with your chosen design guidance or the model's own judgment.
 - [Example brief and video sequence](examples/vantage.md): a fictional AI financial research product's marketing page.

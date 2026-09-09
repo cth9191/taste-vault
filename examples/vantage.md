@@ -40,4 +40,6 @@ After choosing Technical Systems, for example, hold the reference pack, core con
 5. Pick a direction and compare three variations inside it.
 6. Finish one variation, demonstrate mobile and the primary action.
 
+Optional finishing segment: keep the selected original available, then open a separate polish studio. Compare Original, Restrained and Expressive; replay the entrance; adjust an annotation interaction or the city-inspired footer; hide the panel for the reveal. Save or export settings for recording and retain a clean preview with those values. This demonstrates the finishing pass without overwriting the earlier comparisons.
+
 The larger skill matrix can be a separate comparison segment. Keep its limitations visible: the original study used a continuing conversation and repeated revisions, not isolated randomized runs.
